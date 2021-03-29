@@ -1,0 +1,10 @@
+imagesPath = src\\test\\resources\\images\\
+imagesType = \.jpg
+domainsNum = 1
+randomStringLength = 20
+i.firstName = Name
+i.lastName = Surname
+i.middleName = Middle
+i.nickName = Nick
+
+

@@ -1,0 +1,58 @@
+263  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+11819 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12907 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13239 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+13239 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+13245 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+13261 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+14170 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15654 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37854b34] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+16140 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+32735 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='zEyJg4zUfPchcbFxWHJR', lastname='5ZKsUyKBi694XHoLPCkJ', address='I7gWyESpCrNkYUFMYUMY', allEmails='lRwGNSRVd9@71nc8ilpiv.org
+99ElWQS52b@ONRE427aqB.jp
+czWtVEnRrf@kCDPiLlUED.org', allPhones='6527019393
+3597849419
+2572389900
+9514825419'}]
+56993 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=349, firstname='D6BiKlQ31Vc1m29CFDHQ', lastname='KgeWrTMFUaDV7YAmZ0FO', address='JWmqpZrfMv5XuOKvT0zB', allEmails='Ge3bNfp851@O6ro2GmJkC.es
+BQG4Mkwsv7@I8drg1SqM5.fr
+Gtks8KtURj@Y7rqU0Uw0w.ru', allPhones='8976978107
+8266950040
+9493635242
+4101268728'}
+57024 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='2KvkfgL2ENwS4kF6Bh9n', lastname='OuhtcZzYpn5BmMcbF7wG', address='V6w4109R0yCOi7UNFTJA', allEmails='wicygu9vq7@u3FVuySfaJ.by
+84F1Cd3TzX@umRG4XQ3BI.au
+oWMDMIIryZ@I05l8vwvPE.org', allPhones='3769626596
+2582660071
+8152199848
+9584188054'}]
+84123 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=358, firstname='LFnWVmK1mQgkxgf2bDoM', lastname='rcN6dVGx4aolfiCVYxyb', address='6bnbxZjO4CLrXFfZQybH', allEmails='eeYVz3db1b@iGnb2XgTOu.edu
+GQ1sStynve@kMxdfviB30.gov
+sD4DabRYDS@OYXU9hBjJr.ua', allPhones='2478068760
+5701099289
+7527102706
+3321696347'}
+84160 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='TcfsrnPBDRR9DUXSb8MK', lastname='YoaSHgdgIzR29ur1nJO7', address='6Ks6AGe0LIv5cZ7GuaEp', allEmails='mDcKfS4LaL@ZHX1hDSXQa.es
+uTs2APjza8@9UxfPAkXm8.us
+zqRaHu2kgr@dpfLxrBhAf.gov', allPhones='3091429512
+3612838920
+4857133856
+7123229914'}]
+111298 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=370, firstname='xeLlW99ifmcW5jsc5eT0', lastname='82t7pg4Eae5Zx4dtRvKm', address='eTJbuwm6yeSjXi5dRPNg', allEmails='pHJGmCRdw4@lFSEcLQvfB.au
+5MU4f7mGcE@F1T8B65JUG.lv
+VuvOQvyejk@Rz3phXajjX.uk', allPhones='4309223890
+2958649938
+0991964702
+6383983238'}
+111314 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='LFnWVmK1mQgkxgf2bDoM', lastname='rcN6dVGx4aolfiCVYxyb', address='6bnbxZjO4CLrXFfZQybH', allEmails='eeYVz3db1b@iGnb2XgTOu.edu
+GQ1sStynve@kMxdfviB30.gov
+sD4DabRYDS@OYXU9hBjJr.ua', allPhones='2478068760
+5701099289
+7527102706
+3321696347'}]
+138483 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=358, firstname='2KvkfgL2ENwS4kF6Bh9n', lastname='OuhtcZzYpn5BmMcbF7wG', address='V6w4109R0yCOi7UNFTJA', allEmails='wicygu9vq7@u3FVuySfaJ.by
+84F1Cd3TzX@umRG4XQ3BI.au
+oWMDMIIryZ@I05l8vwvPE.org', allPhones='3769626596
+2582660071
+8152199848
+9584188054'}

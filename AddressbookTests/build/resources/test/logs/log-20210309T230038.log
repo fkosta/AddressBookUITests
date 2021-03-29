@@ -1,0 +1,48 @@
+25973 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='QL2ukdgVcuyWJ3MVQ86l', lastname='ODwhTzcLCVHgXQbodCAV', address='BZPwRJ4f3rVg5SLJWvRI', allEmails='c2nS5IMfuh@UQLrMksmXS.org
+RdUtNozpVS@xfV5DTNeeT.uk
+jr25uesnkp@X8bixnsDZN.pt', allPhones='6252313126
+8498158014
+6002437831
+2340039553'}]
+49916 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=313, firstname='eXITjd51pSs6VFnvrD1V', lastname='SopgzUBdFcVfSik8s8Sv', address='fImhL75jBeVmWIsizjli', allEmails='TV0y4VGN4b@aNg4sp1HKI.by
+ZwlNkj4GuR@B4CiezmRBZ.de
+XjQjUEkLsn@wYanb7uJpT.es', allPhones='9249793346
+0899912413
+7540281003
+4009357876'}
+69282 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='WGNKByG5iVRgdvEOS91r', lastname='Fv3ubBEBEhRlj9iueQxn', address='VVEDhr0dDYwv8ZEsEjEL', allEmails='ZHNua4dNM8@LuVPURNmG8.ko
+JHiJD2eXV7@hKjJo0P4SU.es
+PcitRUDZOe@e469he5cGI.ca', allPhones='6547941240
+3249070603
+3170854878
+7553734916'}]
+93657 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=312, firstname='D24HNZirXtLU4iPS9gVg', lastname='T4UqIPZ1U9yMDEHDhmlZ', address='H29k7exYQungUNTtq19y', allEmails='JS7UbXMwXF@PjHoKmfWXu.pl
+EDYEfRru2H@60YTUylON3.su
+XqBhUnnYvk@heky9ORQpx.cn', allPhones='2816800575
+9573520620
+4200284849
+8799846618'}
+113036 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='TWj7jx9r9JaVejJ1esgj', lastname='Y0Ws5tRTMYJ3uwWXNqvC', address='x0cvNc6IB5sun3xEGOvs', allEmails='5nVPXMgajv@0lJpQwRBjU.lv
+MYKJCvFxu6@UaJbU3TTXR.edu
+wZ9BA3u2dE@1USks50P2V.org', allPhones='9177174681
+7242387655
+4306832677
+5459786815'}]
+137281 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=311, firstname='Dtqwe5BDVE3bpGkFZokN', lastname='o8j8EVq6c1w0tWIarXXW', address='R8dmr8jMC2bVNZoj3ShM', allEmails='TICQql1bWN@EwLxtXADWq.edu
+hZMHkZZ0ad@rKkO99uz5n.net
+Yx7MrxPKFz@jIgMnPMKkI.am', allPhones='4591531075
+6363438709
+6535590841
+9686468367'}
+156574 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList with parameters [ContactData{id=0, firstname='hCRSoA3YWn7l0giu6XAm', lastname='3L37Vki8EiXgTGVZTvZs', address='JbHlFwRmIIlAigS8L38z', allEmails='ueHaerrXFn@y7l4luDyK1.us
+wEaG48YkWO@0bPhF21LGg.uk
+UEtBKEvvLl@WHUIWudaTT.es', allPhones='0632489230
+9354922690
+9798059321
+4618859182'}]
+180837 [main] INFO  qa.issart.com.tests.TestBase - The modified contact is ContactData{id=301, firstname='77VuOJuvDy3uXyKdSauu', lastname='pxapdeo56FM58YgmmcX3', address='wX1KE3q8v0MxAwTj4pwW', allEmails='LLzPBeNQF5@aWCFYeIcTd.nl
+TEKtQjStQr@jDxBFnc33n.su
+1jA2EKGzl4@rQKUNndqMh.lv', allPhones='1547115682
+4370832974
+5877606185
+9379194810'}

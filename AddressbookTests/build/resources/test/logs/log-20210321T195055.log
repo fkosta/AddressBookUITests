@@ -1,0 +1,24 @@
+27134 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='cyxti2FG8nO24q7rQyL0', lastname='kmBxHGREMJVrzVuI1XIc', address='UQXOMrv4hnMCM6GkvFGX', allEmails='aHHdrMWcZG@Zljo2yf92G.pl
+94vpOEkUQG@PuvoTwvIdA.ca
+nTwZ5OxT5Q@7fTyOdl4mG.kz', allPhones='8193495741
+1438758349
+2435081732
+9469024419'}]
+55113 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='bwA8C5AEadSipLIOh0f7', lastname='lmqWufzTiCspMudO9unv', address='d4KIOHayy9uVbn9V3UeM', allEmails='dnsqljJWCJ@VgRQSJJKS3.ca
+JtlhBDh7M1@ow6sZX5Hhc.by
+dfIEIcwZPi@qHbQmA2vmN.es', allPhones='3407422896
+9548719689
+1872392672
+8513901492'}]
+83384 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='xO3CDcliCsCAmmzHHWd0', lastname='zf789rEsmWkaAl6PJA3i', address='ybLURxFshp5WZZ5xdP4s', allEmails='1nXa7d3Y4H@ZAz9Vkijfg.ca
+fQAH1lxhtO@iaXsbSTdMg.gov
+bOeaxcTJgZ@cCQcaMkUnp.lv', allPhones='9286899400
+3264664898
+5844951216
+7229392395'}]
+112001 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='4GZVXJFckTweZSmKjL4o', lastname='Fc4N47IlGRPo82on7C7x', address='JDwa3cCkAaaYCIucamue', allEmails='1iuVvjbasM@eCt6L4YkX8.ca
+blp2VKIZ2t@FwetQk3AhO.gov
+lYV85x7ce9@rBCVRRYmXL.by', allPhones='5561166650
+0186340894
+3236424621
+7216227118'}]

@@ -1,0 +1,14 @@
+243  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+13397 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13663 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13678 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+13679 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+13680 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+13690 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+14144 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15656 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f6c6077] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+15851 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17438 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='rsrHfGBaY8544NvUtIdF'}]
+19114 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='yr7RqXukpqi0BOCcxsuD'}]
+20723 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='E7UXjBGulC3AjWOA4pj4'}]
+22398 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='ArXCitcz8Gy5eza49CV0'}]

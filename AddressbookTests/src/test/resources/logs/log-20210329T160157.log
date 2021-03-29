@@ -1,0 +1,21 @@
+236  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+10530 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10876 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+10891 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+10892 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+10899 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+10909 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+11349 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+12640 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6d8796c1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+12744 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29138 [main] INFO  qa.issart.com.tests.TestBase - Started test verifyContactsInGroups with parameters [GroupData{group_id=464, group_name='JlC1tMHdYUC3ZW0EV8D3'}]
+44507 [main] INFO  qa.issart.com.tests.TestBase - Contact groups UI 0 contact groups DB 0
+44522 [main] INFO  qa.issart.com.tests.TestBase - Started test verifyContactsInGroups with parameters [GroupData{group_id=435, group_name='pV3oBksVSYNGjX8L3dcS'}]
+59743 [main] INFO  qa.issart.com.tests.TestBase - Contact groups UI 0 contact groups DB 13
+59766 [main] INFO  qa.issart.com.tests.TestBase - Started test verifyContactsInGroups with parameters [GroupData{group_id=452, group_name='gtaYof6KV4qfqrEJFM1d'}]
+75200 [main] INFO  qa.issart.com.tests.TestBase - Contact groups UI 1 contact groups DB 8
+75210 [main] INFO  qa.issart.com.tests.TestBase - Started test verifyContactsInGroups with parameters [GroupData{group_id=468, group_name='pV3oBksVSYNGjX8L3dcS'}]
+90442 [main] INFO  qa.issart.com.tests.TestBase - Contact groups UI 0 contact groups DB 0
+90446 [main] INFO  qa.issart.com.tests.TestBase - Started test verifyContactsInGroups with parameters [GroupData{group_id=465, group_name='gtaYof6KV4qfqrEJFM1d'}]
+105705 [main] INFO  qa.issart.com.tests.TestBase - Contact groups UI 0 contact groups DB 0
+107711 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/addressbook]

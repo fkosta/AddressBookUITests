@@ -1,0 +1,7 @@
+256  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+11701 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='yV8d9FVwqqfraxoy5eHe'}]
+13643 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='BTjUy9MWN3WAt4FdJ2oA'}]
+15622 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='pV3oBksVSYNGjX8L3dcS'}]
+17554 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='WhuF7c09ST4eB7o82SLL'}]
+19531 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='onB8WKxuXP60VOfqfu7u'}]
+21448 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='Wl6WP2LQ07gS9iMbKdBL'}]

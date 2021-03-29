@@ -1,0 +1,65 @@
+263  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+10881 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11121 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+11138 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+11140 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+11146 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+11162 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+11717 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+13443 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37854b34] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+13646 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+30374 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@76d7881e]
+49252 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0]
+49254 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=351, firstname='NMaX5mhe4beNhipIOCRL', lastname='6KhxDY2qHD9pOWcFWGHw', address='8cVfa1Bwnom3y6cLCa6D', allEmails='c8L8zLQ05Q@2Yn5EvtTFb.jp
+BeRCZ7xr2g@k0MRodqdIk.az
+DvVN5Yty2o@MLoE3TX2wQ.us', allPhones='2559761931
+2796343258
+2458815468
+3327678425'}]
+49305 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@60cb1ed6]
+49822 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [9]
+49823 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=355, firstname='TcfsrnPBDRR9DUXSb8MK', lastname='YoaSHgdgIzR29ur1nJO7', address='6Ks6AGe0LIv5cZ7GuaEp', allEmails='mDcKfS4LaL@ZHX1hDSXQa.es
+uTs2APjza8@9UxfPAkXm8.us
+zqRaHu2kgr@dpfLxrBhAf.gov', allPhones='3091429512
+3612838920
+4857133856
+7123229914'}]
+49844 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@422ab737]
+71702 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [2]
+71702 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=315, firstname='cyxti2FG8nO24q7rQyL0', lastname='kmBxHGREMJVrzVuI1XIc', address='UQXOMrv4hnMCM6GkvFGX', allEmails='aHHdrMWcZG@Zljo2yf92G.pl
+94vpOEkUQG@PuvoTwvIdA.ca
+nTwZ5OxT5Q@7fTyOdl4mG.kz', allPhones='8193495741
+1438758349
+2435081732
+9469024419'}]
+71726 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@17d2b075]
+90801 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 7]
+90801 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=350, firstname='4Z4xEOo2KrXrIferaw34', lastname='D0Er9VAastGoM1tWVZHL', address='m0RiOHyIoI9ShvFIX88n', allEmails='fRXBJlDPEP@rgjobhuk50.su
+EUVks9EmQ9@iAESxSy5PC.org
+n3qsjnkS5k@8A9qTcemAT.de', allPhones='0932234433
+3028594315
+2188816012
+7432321401'}, ContactData{id=364, firstname='LFnWVmK1mQgkxgf2bDoM', lastname='rcN6dVGx4aolfiCVYxyb', address='6bnbxZjO4CLrXFfZQybH', allEmails='eeYVz3db1b@iGnb2XgTOu.edu
+GQ1sStynve@kMxdfviB30.gov
+sD4DabRYDS@OYXU9hBjJr.ua', allPhones='2478068760
+5701099289
+7527102706
+3321696347'}]
+90832 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@55c57422]
+110362 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 5, 4]
+110362 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=346, firstname='D6BiKlQ31Vc1m29CFDHQ', lastname='KgeWrTMFUaDV7YAmZ0FO', address='JWmqpZrfMv5XuOKvT0zB', allEmails='Ge3bNfp851@O6ro2GmJkC.es
+BQG4Mkwsv7@I8drg1SqM5.fr
+Gtks8KtURj@Y7rqU0Uw0w.ru', allPhones='8976978107
+8266950040
+9493635242
+4101268728'}, ContactData{id=362, firstname='2KvkfgL2ENwS4kF6Bh9n', lastname='OuhtcZzYpn5BmMcbF7wG', address='V6w4109R0yCOi7UNFTJA', allEmails='wicygu9vq7@u3FVuySfaJ.by
+84F1Cd3TzX@umRG4XQ3BI.au
+oWMDMIIryZ@I05l8vwvPE.org', allPhones='3769626596
+2582660071
+8152199848
+9584188054'}, ContactData{id=356, firstname='LFnWVmK1mQgkxgf2bDoM', lastname='rcN6dVGx4aolfiCVYxyb', address='6bnbxZjO4CLrXFfZQybH', allEmails='eeYVz3db1b@iGnb2XgTOu.edu
+GQ1sStynve@kMxdfviB30.gov
+sD4DabRYDS@OYXU9hBjJr.ua', allPhones='2478068760
+5701099289
+7527102706
+3321696347'}]

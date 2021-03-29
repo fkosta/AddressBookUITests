@@ -1,0 +1,18 @@
+269  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+9152 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+9421 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+9437 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+9437 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+9452 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+9468 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+9930 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+11344 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f14761c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+11591 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12964 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='rsrHfGBaY8544NvUtIdF'}]
+14768 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=459, group_name='rsrHfGBaY8544NvUtIdF'}
+14938 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='yr7RqXukpqi0BOCcxsuD'}]
+16711 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=465, group_name='Duur7uSJHfabknK11IoM'}
+16858 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='E7UXjBGulC3AjWOA4pj4'}]
+18764 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=463, group_name='fDB01UX0qRTodb5sOLhr'}
+18902 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='ArXCitcz8Gy5eza49CV0'}]
+20908 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=444, group_name='lPkZh8EMCZ9OaestcoUX'}

@@ -1,0 +1,22 @@
+245  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+11212 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11561 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+11573 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+11577 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=****}
+11745 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+11751 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+12345 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+13851 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@45cd7bc5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14039 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15487 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@2ed71727]
+16252 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1]
+16252 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=456, group_name='aFg9lBgqBExLrzGvI5cu'}]
+16285 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@4346808]
+16954 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [9]
+16955 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=453, group_name='YsJxTy56kbve31NFgcG6'}]
+16972 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@68b734a8]
+18028 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 8]
+18028 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=457, group_name='FEo2XhwJQCTlTxKDNNXZ'}, GroupData{group_id=454, group_name='w0X4KFRQ1nNEjNuoLAXm'}]
+18045 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@307e4c44]
+19377 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 6, 5]
+19377 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=440, group_name='qy3mFayPIz8E8uKvTTch'}, GroupData{group_id=447, group_name='nEJFQXw77DBVl0dVEuCm'}, GroupData{group_id=455, group_name='IkvzCUM7hKlU93NSRMyC'}]

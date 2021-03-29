@@ -1,0 +1,24 @@
+30521 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='eXITjd51pSs6VFnvrD1V', lastname='SopgzUBdFcVfSik8s8Sv', address='fImhL75jBeVmWIsizjli', allEmails='TV0y4VGN4b@aNg4sp1HKI.by
+ZwlNkj4GuR@B4CiezmRBZ.de
+XjQjUEkLsn@wYanb7uJpT.es', allPhones='9249793346
+0899912413
+7540281003
+4009357876'}]
+58334 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='ag6aiiys57UXIAVrCWIS', lastname='vthxvXDppA3Ik1Jwa7gR', address='emMvPkSuNEt1uUO9BT8X', allEmails='nEizlwRd1F@XqjY3nqhBW.az
+RedwPvkD5V@HEcGQc476T.kz
+bb40f7oDAL@lSjjEmQoBd.cn', allPhones='4359839385
+1458048409
+5378040447
+4852363436'}]
+93984 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='RgQDcVTWrEF6AOPiOAZv', lastname='Lv39EOJUKTxcuSzt0F5a', address='ns4qYgJpEkUCdYnkCm38', allEmails='KPDNwYNzbO@rJ5vGrg4vI.de
+vfglsxmeV4@nlrQ9YPg3e.fr
+TAEtaQSsTm@jS1VVuqCpA.fr', allPhones='5636314251
+4013271439
+0170955908
+9721759764'}]
+121727 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='gxy5LWiPbUAGqJKv4mw1', lastname='wtI0DxV78w7bfm0XbJCW', address='5y2TqBEa9WnAGgKBjEvf', allEmails='pXcJLIWq69@0SXxdJYsOy.kz
+JfVyurLMJO@ih3HI9o2rT.fr
+bmOKef8IGp@FDk46WfnVN.jp', allPhones='0190329327
+3819695624
+8159501167
+3043320877'}]

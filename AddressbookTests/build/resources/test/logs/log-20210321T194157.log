@@ -1,0 +1,24 @@
+31165 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='Y83D1kPQn8ojqwaoTYea', lastname='1XgO9o7V54tN55BQeUn6', address='9TA0h6rtLsZfYB7KBJXu', allEmails='Jl9JXBYKi4@sUSPzOZNGN.ru
+8lzSkiqzqo@PVgqF8GpJV.edu
+EtaI0nEGGF@1cznujsxzW.kz', allPhones='+30512584
+3550404514
+8591297880
+7155355245'}]
+59068 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='MGuZ5BZXuEOytOHHHET8', lastname='lQAUkBtKa86zirzZT9Po', address='20INzpYFQAZcsLn5r77A', allEmails='x1vDzEobiV@5uot1xGlaj.gov
+BCg2wYVyq4@yjjtVjs43W.cn
+OnVP3MvUQ2@8oNj8MOLbB.de', allPhones='5514621269
+5612321284
+5778700573
+1504874340'}]
+87498 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='uHzU3wLEwLfgQgR6M9ga', lastname='2wx60PT4RhkDdHCBq5UP', address='cruxHxs5JtaNY2TtZU73', allEmails='viWbt8dpT9@fKNESptUz9.edu
+Ylg1Dqrk00@0RI3rRNmFd.az
+3qqYOz0yoO@0c54UshlCD.es', allPhones='1294525536
+0830897846
+1493819284
+5890970799'}]
+115839 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [ContactData{id=0, firstname='CQ4YzEe205dpoZzOho1k', lastname='Q1e4AEEsWAz830Zdsz6l', address='omL6qoBEiWskXhUKJr7K', allEmails='hdIWX1QMVy@SiTTvOOlkw.com
+m0Zgkkxqcx@MSAOrjcIfS.nl
+UrfPiHxhNx@8OnPMmZ1tq.com', allPhones='0717101525
+7753252057
+6004150693
+5167857326'}]

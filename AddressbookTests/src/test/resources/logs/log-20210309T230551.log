@@ -1,0 +1,50 @@
+25534 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@5b11a194]
+44369 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0]
+44369 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=301, firstname='hCRSoA3YWn7l0giu6XAm', lastname='3L37Vki8EiXgTGVZTvZs', address='JbHlFwRmIIlAigS8L38z', allEmails='ueHaerrXFn@y7l4luDyK1.us
+wEaG48YkWO@0bPhF21LGg.uk
+UEtBKEvvLl@WHUIWudaTT.es', allPhones='0632489230
+9354922690
+9798059321
+4618859182'}]
+60528 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@4c4d362a]
+79273 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [12]
+79273 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=311, firstname='TWj7jx9r9JaVejJ1esgj', lastname='Y0Ws5tRTMYJ3uwWXNqvC', address='x0cvNc6IB5sun3xEGOvs', allEmails='5nVPXMgajv@0lJpQwRBjU.lv
+MYKJCvFxu6@UaJbU3TTXR.edu
+wZ9BA3u2dE@1USks50P2V.org', allPhones='9177174681
+7242387655
+4306832677
+5459786815'}]
+95425 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@71154f21]
+95926 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [11]
+95926 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=316, firstname='gxy5LWiPbUAGqJKv4mw1', lastname='wtI0DxV78w7bfm0XbJCW', address='5y2TqBEa9WnAGgKBjEvf', allEmails='pXcJLIWq69@0SXxdJYsOy.kz
+JfVyurLMJO@ih3HI9o2rT.fr
+bmOKef8IGp@FDk46WfnVN.jp', allPhones='0190329327
+3819695624
+8159501167
+3043320877'}]
+115017 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@afb5821]
+134098 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 10]
+134098 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=314, firstname='ag6aiiys57UXIAVrCWIS', lastname='vthxvXDppA3Ik1Jwa7gR', address='emMvPkSuNEt1uUO9BT8X', allEmails='nEizlwRd1F@XqjY3nqhBW.az
+RedwPvkD5V@HEcGQc476T.kz
+bb40f7oDAL@lSjjEmQoBd.cn', allPhones='4359839385
+1458048409
+5378040447
+4852363436'}, ContactData{id=319, firstname='1Ao6m2cIm4t1DlW3V87C', lastname='88o0d4Gi919VnGGKe1xI', address='Tw6bMBMulsj3SMdmwaLR', allEmails='IR8tGnjPYm@Z3JEclOduU.ru
+qj8AZpKzly@S4SLGFKqX2.by
+PubwNCQBGM@yJnFDivMaC.au', allPhones='+71536611
+5804334463
+9202953284
+1937666691'}]
+149981 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices with parameters [[Ljava.lang.String;@5e8604bf]
+169444 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 8, 8]
+169444 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are [ContactData{id=289, firstname='zto8uzedeoLT72MJIjXv', lastname='pUkXGJU0GRjGVL985U1k', address='o4OpIcgbibGpeYT4b7Vf', allEmails='4xvOIPbfv3@jPIXSQuCrZ.es
+aaRdHifOs3@uAl8K3IBGd.am
+6LkKNGar8b@YWpRVTCJkK.ru', allPhones='7549811189
+1681650374
+6275757852
+9540748067'}, ContactData{id=320, firstname='F5UQ4BenOupxREY2OXlg', lastname='Ei4nKCDSlfTEZEFRGYly', address='ZCvKNwnM1E9Pc3zTW6J7', allEmails='I67yVcDxiU@369KBmai13.us
+XIv3hFXoqn@GkVmZYABxS.kz
+yArZXnwREf@z6G0oLWfje.org', allPhones='4902551848
+3049262637
+6508231366
+2909648590'}]

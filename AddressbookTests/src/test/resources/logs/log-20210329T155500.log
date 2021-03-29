@@ -1,0 +1,13 @@
+229  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+14998 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@11a82d0f]
+16074 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1]
+16075 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=475, group_name='ArXCitcz8Gy5eza49CV0'}]
+16537 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@1a5b8489]
+17170 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [11]
+17190 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=473, group_name='yr7RqXukpqi0BOCcxsuD'}]
+17604 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@60e5272]
+18791 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 10]
+18791 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=472, group_name='rsrHfGBaY8544NvUtIdF'}, GroupData{group_id=474, group_name='E7UXjBGulC3AjWOA4pj4'}]
+19124 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices with parameters [[Ljava.lang.String;@62b969c4]
+20693 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 8, 5]
+20694 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=462, group_name='fDB01UX0qRTodb5sOLhr'}, GroupData{group_id=459, group_name='rsrHfGBaY8544NvUtIdF'}, GroupData{group_id=470, group_name='onB8WKxuXP60VOfqfu7u'}]
