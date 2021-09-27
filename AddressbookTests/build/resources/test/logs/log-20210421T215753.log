@@ -1,0 +1,94 @@
+31362 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+33036 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:522 name: WpBtOXCvoHEkWN200Jnt
+33065 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+34623 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:523 name: Guh4eZvK1goYOpTPH1WM
+34625 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+36154 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:524 name: EkUrIgpRNcdMPBYwFa5a
+36155 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+37737 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:525 name: GjIJE34E6hJFlcudQOgH
+55501 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+64700 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:409 first name: qmGt6TUoZkzpqOqQESbs last name: BhlK7m2r3FXg6VuBbRCx address: oCZRWpE1mGNx6ATWexIC phones: 0082161321, 9143156114, 3474468484, 9874984319 emails: 9GIGjjqu2F@sX3irT1ngv.az, Fhqe9Zo7nc@ncXZqpG833.pl, ynr8Qjp0lR@GiMdn2Co0q.nl
+64702 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+73411 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:410 first name: kZjE58fFYlM9Jxm9TGBF last name: S3ZpDdxDoYk29Fg0AJeA address: ISOcLg9xeAXseZlC6dzD phones: 3464724979, 2333851334, 7277496525, 8663099025 emails: Y8MFL6ENUr@2i4T7BtopC.su, 6XVkTiRnnG@fOrOLEhe5r.am, o1V7wdXRu6@Cc6h2wPrRu.uk
+73412 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+87170 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:411 first name: UbndPaD2JXxos6LwKtik last name: U9H5lPvAJAOcHxZg41Ut address: g8ArQleAmsDYmhCVgH5c phones: 6442705938, 7897050212, 4787625798, 2593508766 emails: lJg2AvKdv2@tfS5xAkkzK.net, vMs915Ld9M@OUOO0PvuoV.uk, jx3Yo8PTrV@KPRLcuWUcJ.cn
+87172 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+96030 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:412 first name: BWq7KWk2Od3ELgclNoI5 last name: D3MlmlWBGwbrJuTf1b4O address: hkjFBhygJRLDveHqQ3Ex phones: 5427501343, 4855761576, 7233374262, 5301152305 emails: gF0KKJMrbK@QqXRv7MbMN.am, r4DWeNlB94@IuvyRwTT46.us, jQFxlCd5Vp@CdRmf83f9Q.cn
+116067 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+117815 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 525 new group name: IQVezxd86Kdyz1FzjnF1 old: GjIJE34E6hJFlcudQOgH
+118087 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+119821 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 503 new group name: c7Vdml19UJctWVv4oA7d old: WpBtOXCvoHEkWN200Jnt
+119987 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+121724 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 519 new group name: TIbK2z49I26930A1f0wb old: IuPcGzaxZxZwurjHkIOj
+121869 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+123680 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 525 new group name: XbLefqO2kIWakRz7dlIP old: IQVezxd86Kdyz1FzjnF1
+123885 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+125641 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 520 new group name: NZzUBzIp9X4xatHXDazW old: KyitVdif8CxAaD3kG6O5
+125855 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+127726 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 510 new group name: R6IeTvSJZZwQab9mry7c old: NZzUBzIp9X4xatHXDazW
+144969 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+168919 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 396 new contact firstname: E4Y3Irur4WnIogwaWDi1 old: kZjE58fFYlM9Jxm9TGBF
+ new contact lastname: d6NCArGv6tLq9rLnXygQ old: S3ZpDdxDoYk29Fg0AJeA
+ new contact address: Et4lsO4dJ69w6VX7Lo6a old: ISOcLg9xeAXseZlC6dzD
+ new contact emails: nE6FkPvwTg@hduGKcfE3D.jp, BzQDHE5q9h@LVrMzjzxjB.ko, vqmNNS3Gig@Z5tV5La5KQ.br old: null, null, null
+ new contact phones: 9095992397, 2117028491, 5395223944, 2835767952 old: null, null, null, null
+
+168969 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+196201 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 409 new contact firstname: 0byZTTmVlmeOR6inHnGo old: qmGt6TUoZkzpqOqQESbs
+ new contact lastname: 0PGqD4hmGtZgwTLih4E3 old: BhlK7m2r3FXg6VuBbRCx
+ new contact address: xkY6wkbzQ86rrEibXUCD old: oCZRWpE1mGNx6ATWexIC
+ new contact emails: TwWpVPUnyS@d7Evb9sNme.nl, vOjTWjkOOw@djGh0DegK6.ru, giXnu9Ukdx@pmYHx9ys1y.us old: null, null, null
+ new contact phones: 7083298466, 3544522651, 4399812920, 0666145812 old: null, null, null, null
+
+196286 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+223356 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 409 new contact firstname: OiX64kVSIFShGtLHzaSl old: 0byZTTmVlmeOR6inHnGo
+ new contact lastname: yseEmqsr7sw1oAk8spni old: 0PGqD4hmGtZgwTLih4E3
+ new contact address: 8DUQsX5lztZeGZqUPfdf old: xkY6wkbzQ86rrEibXUCD
+ new contact emails: mIYzyrAYt9@3oAembVnoF.gov, mOT2dNGHrr@j0V7OyAMbH.su, fElM8HcAGR@Mr34GTmNhm.fr old: null, null, null
+ new contact phones: 1835071773, 9170993506, 3023995764, 8782034430 old: null, null, null, null
+
+223543 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+250478 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 401 new contact firstname: hlis1fofgHGYsptyz3Us old: E4Y3Irur4WnIogwaWDi1
+ new contact lastname: XZMK0ZtHPJOiO4oXgv0t old: d6NCArGv6tLq9rLnXygQ
+ new contact address: HzCEMDd9ixWamJTHJyIK old: Et4lsO4dJ69w6VX7Lo6a
+ new contact emails: WD10FSHTrx@8M00v5hk0B.by, k5l1PnvRxe@G2SO12FGgi.edu, tvmOXHtD2O@PJPsbOEHW6.es old: null, null, null
+ new contact phones: 0565034636, 4260772092, 5511711202, 4515644148 old: null, null, null, null
+
+270511 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+271178 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1]
+271178 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=503, group_name='c7Vdml19UJctWVv4oA7d'}]
+271237 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+271788 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [16]
+271788 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=525, group_name='XbLefqO2kIWakRz7dlIP'}]
+271850 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+272517 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [10]
+272518 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=510, group_name='R6IeTvSJZZwQab9mry7c'}]
+272577 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+273606 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 14]
+273606 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=524, group_name='EkUrIgpRNcdMPBYwFa5a'}, GroupData{group_id=522, group_name='WpBtOXCvoHEkWN200Jnt'}]
+273814 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+275146 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 12, 7]
+275147 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=519, group_name='TIbK2z49I26930A1f0wb'}, GroupData{group_id=520, group_name='NZzUBzIp9X4xatHXDazW'}, GroupData{group_id=506, group_name='GjIJE34E6hJFlcudQOgH'}]
+292068 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+310797 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0]
+310818 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 406 first name: oG7fSGNBdIk0V5smjh8f last name 0EuHOTQRNWZF6xOivdTM
+
+310850 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+311198 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [11]
+311198 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 409 first name: OiX64kVSIFShGtLHzaSl last name yseEmqsr7sw1oAk8spni
+
+311240 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+332963 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [2]
+332964 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 412 first name: BWq7KWk2Od3ELgclNoI5 last name D3MlmlWBGwbrJuTf1b4O
+
+333017 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+352016 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 9]
+352016 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 349 first name: qmGt6TUoZkzpqOqQESbs last name BhlK7m2r3FXg6VuBbRCx
+ id: 401 first name: hlis1fofgHGYsptyz3Us last name XZMK0ZtHPJOiO4oXgv0t
+
+352068 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+371385 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 7, 4]
+371385 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 411 first name: UbndPaD2JXxos6LwKtik last name U9H5lPvAJAOcHxZg41Ut
+ id: 382 first name: Natalia last name Talalova
+ id: 405 first name: BWq7KWk2Od3ELgclNoI5 last name D3MlmlWBGwbrJuTf1b4O
+

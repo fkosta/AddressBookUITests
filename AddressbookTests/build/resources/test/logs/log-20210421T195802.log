@@ -1,0 +1,15 @@
+14518 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+15441 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1]
+15462 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=491, group_name='c7Vdml19UJctWVv4oA7d'}]
+15581 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+16372 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [16]
+16372 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=499, group_name='XbLefqO2kIWakRz7dlIP'}]
+16555 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+17204 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [2]
+17204 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=477, group_name='GjIJE34E6hJFlcudQOgH'}]
+17301 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+18334 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 14]
+18334 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=493, group_name='XbLefqO2kIWakRz7dlIP'}, GroupData{group_id=497, group_name='c7Vdml19UJctWVv4oA7d'}]
+18411 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteGroupsByIndices
+19922 [main] INFO  qa.issart.com.tests.TestBase - Indices for groups are [1, 12, 7]
+19922 [main] INFO  qa.issart.com.tests.TestBase - Deleted groups are [GroupData{group_id=500, group_name='NZzUBzIp9X4xatHXDazW'}, GroupData{group_id=498, group_name='TIbK2z49I26930A1f0wb'}, GroupData{group_id=435, group_name='Guh4eZvK1goYOpTPH1WM'}]

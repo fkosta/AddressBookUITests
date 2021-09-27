@@ -25,6 +25,17 @@ public class BaseHelper {
         wD.findElement(locator).click();
     }
 
+    protected String getAttribute(By locator, String attribute){
+        if(attribute.equals(""))
+            return wD.findElement(locator).getText();
+        else
+            return wD.findElement(locator).getAttribute(attribute);
+    }
+
+    protected Boolean isCheckBoxSet(By locator){
+        return wD.findElement(locator).isSelected();
+    }
+
     protected boolean isElementPresent(By locator){
         try {
             wD.findElement(locator);

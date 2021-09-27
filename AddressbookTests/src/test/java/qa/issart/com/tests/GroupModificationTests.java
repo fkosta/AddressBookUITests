@@ -1,12 +1,12 @@
 package qa.issart.com.tests;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import qa.issart.com.models.GroupData;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -14,12 +14,22 @@ import static org.hamcrest.Matchers.equalTo;
 public class GroupModificationTests extends TestBase{
     private int iteration=0;
     private int groupsNum;
-    private Set<GroupData> changedGroups = new HashSet<>();
+    private Map<Integer, GroupData> changedGroups = new HashMap<>();
+    private Map<Integer, GroupData> enteredGroups = new HashMap<>();
 
     @BeforeTest
-    public void getGroupsInApp(){
+    @Parameters({"dataFileName"})
+    public void getGroupsInApp(@Optional String dataFileName) throws IOException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        if(dataFileName!=null)
+            dataFile = dataFileName;
+
         appManager.getNavigationHelper().navigateToGroupPage();
         groupsBeforeUI = appManager.getGroupHelper().getGroupsList();
+
+        if(groupsBeforeUI.size()==0){
+            addGroupsToAddressbook(10);
+            groupsBeforeUI = appManager.getGroupHelper().getGroupsList();
+        }
 
         if(useDB) {
             groupsBeforeDB = dbManager.getGroupsList();
@@ -31,22 +41,22 @@ public class GroupModificationTests extends TestBase{
     @Test(dataProvider = "GroupsListFromFile")
     public void modifyGroupFromList(GroupData newGroup){
         iteration++;
-        GroupData modifyedGroup = appManager.getGroupHelper().modifyGroup(newGroup,iteration,rand.nextInt(groupsNum));
-        newGroup.withId(modifyedGroup.getId());
-        logger.info("The modified group is "+modifyedGroup.toString());
+        GroupData modifiedGroup = appManager.getGroupHelper().modifyGroup(newGroup,iteration,rand.nextInt(groupsNum));
+        newGroup.withId(modifiedGroup.getId());
+        logger.info(buildLogEntry(modifiedGroup, newGroup));
         appManager.getNavigationHelper().navigateBackToGroups();
         if(useDB){
+            enteredGroups.put(newGroup.getId(),newGroup);
+            changedGroups.putIfAbsent(modifiedGroup.getId(),modifiedGroup);
             groupsAfterDB = dbManager.getGroupsList();
-            assertThat(groupsAfterDB, new withElementsInOut(groupsBeforeDB,newGroup,modifyedGroup));
+            assertThat(groupsAfterDB, new withElementsInOut(groupsBeforeDB,newGroup,modifiedGroup));
             groupsBeforeDB.add(newGroup);
-            groupsBeforeDB.remove(modifyedGroup);
-            processedGroups.add(newGroup);
-            changedGroups.add(modifyedGroup);
+            groupsBeforeDB.remove(modifiedGroup);
         }
         else{
             groupsAfterUI = appManager.getGroupHelper().getGroupsList();
-            assertThat(groupsAfterUI, new withElementsInOut(groupsBeforeUI,newGroup,modifyedGroup));
-            groupsBeforeUI.remove(modifyedGroup);
+            assertThat(groupsAfterUI, new withElementsInOut(groupsBeforeUI,newGroup,modifiedGroup));
+            groupsBeforeUI.remove(modifiedGroup);
             groupsBeforeUI.add(newGroup);
         }
     }
@@ -55,7 +65,17 @@ public class GroupModificationTests extends TestBase{
     public void verifyGroupsInUI(){
         if(useDB){
             groupsAfterUI = appManager.getGroupHelper().getGroupsList();
-            assertThat(groupsAfterUI, new withElementsInOut(groupsBeforeUI, processedGroups, changedGroups));
+            assertThat(groupsAfterUI, new withElementsInOut(groupsBeforeUI, enteredGroups.values(), changedGroups.values()));
         }
+    }
+
+    private String buildLogEntry(GroupData modifiedGroup, GroupData newGroup) {
+        StringBuilder sB = new StringBuilder("Modified group with id: "+newGroup.getId());
+        if(modifiedGroup.getName().equals(newGroup.getName()))
+            sB.append(". Visible attributes has not changed");
+        else
+            sB.append(" new group name: "+newGroup.getName()+" old: "+modifiedGroup.getName());
+
+        return sB.toString();
     }
 }

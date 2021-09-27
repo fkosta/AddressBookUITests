@@ -1,4 +1,0 @@
-12221 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='lPkZh8EMCZ9OaestcoUX'}]
-13997 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='RfleswN4hQNYWUfW1L9b'}]
-15864 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='NmXiQPXFSrbfvw20QycT'}]
-17589 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList with parameters [GroupData{group_id=0, group_name='60sCUifIV8ESIfrbdsas'}]

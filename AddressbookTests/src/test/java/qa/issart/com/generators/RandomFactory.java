@@ -3,10 +3,7 @@ package qa.issart.com.generators;
 import org.apache.commons.text.RandomStringGenerator;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Random;
+import java.util.*;
 
 public class RandomFactory {
     private Random rand = new Random();
@@ -42,7 +39,7 @@ public class RandomFactory {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(new Date());
         calendar.add(Calendar.DAY_OF_YEAR,-1*rand.nextInt(36500));
-        SimpleDateFormat formatter = new SimpleDateFormat("d-MMMM-YYYY");
+        SimpleDateFormat formatter = new SimpleDateFormat("d-MMMM-YYYY", Locale.ENGLISH);
         return formatter.format(calendar.getTime());
     }
 

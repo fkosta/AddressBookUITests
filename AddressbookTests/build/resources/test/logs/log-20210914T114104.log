@@ -1,0 +1,23 @@
+33648 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+52900 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0]
+52942 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 507 first name: 1WlEAuKityXXxNsmHSuh last name 0ZWXvqeJyVuKiCYIDHcp
+
+69239 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+89394 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [12]
+89395 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 487 first name: iXGetEtSruUH2aCZVdfa last name ZI6KOJQx5xGdaEhwpsZW
+
+105549 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+106034 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [1]
+106035 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 501 first name: zoo37RPrsLoxs469gqbS last name 3ylElT3W1u3Kv9Dpw2hy
+
+125125 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+144292 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 10]
+144293 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 472 first name: vSCtpO83lcZjd0GKWXCP last name zgWdu5hm48wmOWs0V6pp
+ id: 514 first name: BHEfuEsZCBwUbMOQBoVY last name 2Gr1IlErVEoeGJasXn3P
+
+160188 [main] INFO  qa.issart.com.tests.TestBase - Started test deleteContactsByIndices
+179741 [main] INFO  qa.issart.com.tests.TestBase - Indices for contacts are [0, 8, 2]
+179741 [main] INFO  qa.issart.com.tests.TestBase - Deleted contacts are  id: 513 first name: rWoI9Qch2gXQd0ETMWAr last name cawxL04IgjlHlSqe7HIK
+ id: 505 first name: pyppPAuTxkgbzPsAkDNU last name hH6mS5Lg89Vo9YhjlAAY
+ id: 512 first name: rA2KywZaYRWhyTLGnsuB last name Y0Q92M2uuBx4v01ScyiZ
+

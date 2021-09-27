@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import qa.issart.com.models.GroupData;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,10 +19,10 @@ public class GroupHelper extends BaseHelper{
         List<WebElement> weList = wD.findElements(By.className("group"));
         String groupName;
         int groupId;
-        for(int j=0;j<weList.size();j++){
-            groupName = weList.get(j).getText();
-            groupId = Integer.parseInt(weList.get(j).findElement(By.tagName("input")).getAttribute("value"));
-            groupsList.add(new GroupData(groupName,"","").withId(groupId));
+        for (WebElement webElement : weList) {
+            groupName = webElement.getText();
+            groupId = Integer.parseInt(webElement.findElement(By.tagName("input")).getAttribute("value"));
+            groupsList.add(new GroupData(groupName, "", "").withId(groupId));
         }
         return groupsList;
     }
@@ -57,7 +56,7 @@ public class GroupHelper extends BaseHelper{
         String groupFooter = wD.findElement(By.name("group_footer")).getAttribute("value");
         fillGroupFields(newGroup);
         click(By.name("update"));
-        return new GroupData(groupName,groupHeader,groupFooter).withId(Integer.valueOf(groupId));
+        return new GroupData(groupName,groupHeader,groupFooter).withId(Integer.parseInt(groupId));
     }
 
     public Set<GroupData> deleteGroups(List<Integer> indices, int iteration) {
@@ -77,5 +76,12 @@ public class GroupHelper extends BaseHelper{
         }
         click(By.xpath(String.format("/html/body/div/div[4]/form/input[%d]",ind)));
         return deletedGroups;
+    }
+
+    public void deleteAllGroups(int groupsNum) {
+        for (int j=1;j<groupsNum+1;j++)
+            click(By.xpath(String.format("/html/body/div/div[4]/form/span[%d]/input",j)));
+
+        click(By.xpath("/html/body/div/div[4]/form/input[2]"));
     }
 }

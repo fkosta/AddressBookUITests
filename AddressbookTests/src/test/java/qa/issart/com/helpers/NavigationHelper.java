@@ -25,4 +25,9 @@ public class NavigationHelper extends BaseHelper{
         click(By.linkText("home"));
         return isElementPresent(By.id("maintable"));
     }
+
+    public boolean navigateToBirthdaysList(){
+        click(By.linkText("next birthdays"));
+        return isElementPresent(By.xpath("/html/body/div/div[4]/h1"));
+    }
 }

@@ -1,10 +1,7 @@
 package qa.issart.com.tests;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import qa.issart.com.models.GroupData;
-
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -15,11 +12,14 @@ public class GroupCreationTests extends TestBase{
 
     private int iteration=0;
 
-    @BeforeTest
-    public void getAppGroups(){
+    @BeforeTest()
+    @Parameters({"dataFileName"})
+    public void getAppGroups(@Optional String dataFileName){
+        if(dataFileName!=null)
+            dataFile = dataFileName;
+
         appManager.getNavigationHelper().navigateToGroupPage();
         groupsBeforeUI = appManager.getGroupHelper().getGroupsList();
-
         if(useDB) {
             groupsBeforeDB = dbManager.getGroupsList();
             assertThat(groupsBeforeDB, equalTo(groupsBeforeUI));
@@ -42,21 +42,22 @@ public class GroupCreationTests extends TestBase{
         }
 
         newGroup = newGroup.withId(addedGroup.iterator().next().getId());
-        assertThat(addedGroup, new withElementsInOut<GroupData>(newGroup));
-
+        logger.info("Added new group id:"+newGroup.getId()+" name: "+newGroup.getName());
         if(useDB) {
             processedGroups.add(newGroup);
             groupsBeforeDB.add(newGroup);
         }
         else
             groupsBeforeUI.add(newGroup);
+
+        assertThat(addedGroup, new HasTheOnlyElement<GroupData>(newGroup));
     }
 
     @AfterTest
     public void verifyGroupsInUI(){
         if(useDB){
             groupsAfterUI=appManager.getGroupHelper().getGroupsList();
-            assertThat(groupsAfterUI, new withElementsInOut<GroupData>(groupsBeforeUI, processedGroups,"creation"));
+            assertThat(groupsAfterUI, new withElementsInOut<GroupData>(groupsBeforeUI, processedGroups,null));
         }
     }
 }

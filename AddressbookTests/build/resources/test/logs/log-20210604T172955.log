@@ -1,0 +1,28 @@
+141413 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+165343 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 415 new contact firstname: iyT60XqU0YJdhkEQcuVP old: pFyQhbkmxmXhHAyICTJZ
+ new contact lastname: q4qYkvqvWFOustSGqkpy old: T0GCOuszBpa5TCDxADxy
+ new contact address: eMYXRv5eLwlvkCCmSW7P old: nCvp11eSinQYqlcqAQfa
+ new contact emails: OPv1tL3HHt@CLvgCGTjiS.au, YfM3yUNFxe@GG1kmNu3p5.ko, trq27Xekf9@u5V8hFFrWL.gov old: null, null, null
+ new contact phones: 7507133629, 1935268429, 1729485333, 1290201963 old: null, null, null, null
+
+165446 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+192057 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 415 new contact firstname: Imu5n9Bpw1tl6dJV2Ms3 old: iyT60XqU0YJdhkEQcuVP
+ new contact lastname: jAqgtBRDXFn7CbkACd98 old: q4qYkvqvWFOustSGqkpy
+ new contact address: BRzEelZMHXsyq3GIY4k8 old: eMYXRv5eLwlvkCCmSW7P
+ new contact emails: wN2gNtDJYI@Azh4uA9rm6.fr, yS1BvNnvwx@HXVQpitLcK.nl, hRAU4FN9ec@nIIzfXWqRy.jp old: null, null, null
+ new contact phones: 1633650586, 1193381295, 9715151649, 8518617470 old: null, null, null, null
+
+192096 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+218870 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 420 new contact firstname: RxYOqwnU5JXLD8E1eXka old: 06K3Z6Y16bWvrYWkUqkp
+ new contact lastname: WVMoNd1F9FvsWBopMDcM old: T7mT4WHbnxGj0bvd8SKD
+ new contact address: RM6x1jnXogVQ3hwWLxOP old: GERkk56oCAAAvNSDpjmK
+ new contact emails: bdgY37ItW7@PJv9XgNPEK.gov, gXOigbzqdh@0JEZcxbNKX.nz, GuBem001ZV@KDpOc0xLNJ.su old: null, null, null
+ new contact phones: 3238719799, 6710198851, 4554340732, 2973974822 old: null, null, null, null
+
+218900 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+245522 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 422 new contact firstname: HAdPaNfkz4rx6Uo7TxBp old: aeNPftjuJizwU5IrySDK
+ new contact lastname: 3VwipOGyMVVkcMcAGmDA old: JszIfrYevxzJVB7zmkGw
+ new contact address: JRXJ8gukw5LxAEnKXxh4 old: gLntFWhqCIWDdIGwErXz
+ new contact emails: aupSUkrusI@ZsiRQOWowo.com, A2h9JOFEKr@2G7pnvcQZG.org, 0NYWJuopc4@Qi1CAArDm7.kz old: null, null, null
+ new contact phones: 6955403628, 3215195566, 7713772187, 2058109015 old: null, null, null, null
+

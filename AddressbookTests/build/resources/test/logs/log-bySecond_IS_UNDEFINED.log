@@ -1,4 +1,0 @@
-33320 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [qa.issart.com.models.ContactData@987425ee]
-61104 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [qa.issart.com.models.ContactData@437911b5]
-88845 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [qa.issart.com.models.ContactData@f9d7f98b]
-116686 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList with parameters [qa.issart.com.models.ContactData@32b7ebad]

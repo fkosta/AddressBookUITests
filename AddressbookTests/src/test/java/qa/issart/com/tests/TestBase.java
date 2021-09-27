@@ -10,6 +10,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import qa.issart.com.generators.DataGenerator;
 import qa.issart.com.helpers.ApplicationManager;
 import qa.issart.com.helpers.DBManager;
 import qa.issart.com.models.ContactData;
@@ -19,6 +20,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -26,9 +28,9 @@ import java.util.stream.Collectors;
 public class TestBase {
     static final ApplicationManager appManager = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
     static final DBManager dbManager = new DBManager();
-    String dataFilePath="src/test/resources/";
-    String dataFile;
-    public boolean useDB = true;
+    protected String dataFilePath="src/test/resources/";
+    protected String dataFile;
+    public static boolean useDB = true;
     public Set<GroupData> groupsAfterDB;
     public Set<GroupData> groupsBeforeUI;
     public Set<GroupData> groupsAfterUI;
@@ -41,7 +43,7 @@ public class TestBase {
     public Set<ContactData> processedContacts = new HashSet<>();
 
     protected final Random rand = new Random();
-    Logger logger = LoggerFactory.getLogger(TestBase.class);
+    static Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeSuite
     public void setUp() throws IOException {
@@ -53,8 +55,8 @@ public class TestBase {
     }
 
     @BeforeMethod
-    public void logTestStart(Method m, Object[] p){
-        logger.info("Started test "+m.getName()+" with parameters "+ Arrays.asList(p).toString());
+    public void logTestStart(Method m){
+        logger.info("Started test "+m.getName());
     }
 
     @AfterSuite(alwaysRun = true)
@@ -67,7 +69,9 @@ public class TestBase {
     @DataProvider(name = "GroupsListFromFile")
     protected Iterator<Object[]> getGroupsFromFile() throws IOException {
         List<GroupData> testGroups = new ArrayList<>();
-        dataFile = System.getProperty("testData");
+        if(dataFile==null)
+            dataFile = System.getProperty("testData","");
+
         File testData = new File(dataFilePath+dataFile);
         if(testData.exists()&&testData.isFile()){
             BufferedReader bufferedReader = new BufferedReader(new FileReader(testData));
@@ -104,7 +108,9 @@ public class TestBase {
     @DataProvider(name = "ContactsListFromFile")
     protected Iterator<Object[]> getContactsFromFile() throws IOException {
         List<ContactData> testContacts = new ArrayList<>();
-        dataFile = System.getProperty("testData");
+        if(dataFile==null)
+            dataFile = System.getProperty("testData","");
+
         File testData = new File(dataFilePath+dataFile);
         if(testData.exists()&&testData.isFile()){
             BufferedReader bufferedReader = new BufferedReader(new FileReader(testData));
@@ -143,10 +149,53 @@ public class TestBase {
         return testContacts.stream().map(c->new Object[]{c.composePhonesAndEmails().setFullCMP(true)}).collect(Collectors.toList()).iterator();
     }
 
+    @DataProvider(name = "listOfIndices")
+    public Iterator<Object[]> listOfIndexes(){
+        List<Object[]> retList = new ArrayList<>();
+        retList.add(new Object[]{new String[]{"F"}});
+        retList.add(new Object[]{new String[]{"L"}});
+        retList.add(new Object[]{new String[]{"R"}});
+        retList.add(new Object[]{new String[]{"F","L"}});
+        retList.add(new Object[]{new String[]{"F","L","R"}});
+        return retList.iterator();
+    }
+
     private String detectFileExtension(String dataFile) {
         String[] fileNameParts = dataFile.split("\\.");
         return fileNameParts[fileNameParts.length-1];
     }
 
+    protected List<ContactData> generateABContactList(int recordsNum) throws IOException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        DataGenerator dataGenerator = new DataGenerator("groups","r",recordsNum,"generator.properties");
+        dataGenerator.initParameters();
+        DataGenerator.Generator generator = dataGenerator.new Generator(GroupData.class);
+        ((DataGenerator.Generator<?>) generator).generateDataList();
+        return generator.dataList;
+    }
+
+    protected void addGroupsToAddressbook(int recordsNum) throws IOException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        DataGenerator dataGenerator = new DataGenerator("groups","r",recordsNum,"generator.properties");
+        dataGenerator.initParameters();
+        DataGenerator.Generator generator = dataGenerator.new Generator(GroupData.class);
+        ((DataGenerator.Generator<?>) generator).generateDataList();
+
+        for(int j = 0; j< ((DataGenerator.Generator<?>) generator).dataList.size(); j++){
+            GroupData dataListEntry = (GroupData) generator.dataList.get(j);
+            appManager.getGroupHelper().addGroup(dataListEntry,0);
+            appManager.getNavigationHelper().navigateBackToGroups();
+        }
+    }
+
+    protected void addContactsToAddressbook(int recordsNum) throws IOException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        DataGenerator dataGenerator = new DataGenerator("contacts","r",recordsNum,"generator.properties");
+        dataGenerator.initParameters();
+        DataGenerator.Generator generator = dataGenerator.new Generator(ContactData.class);
+        ((DataGenerator.Generator<?>) generator).generateDataList();
+
+        for(int j = 0; j< ((DataGenerator.Generator<?>) generator).dataList.size(); j++){
+            ContactData dataListEntry = (ContactData) generator.dataList.get(j);
+            appManager.getContactHelper().addContact(dataListEntry,0,null);
+        }
+    }
 
 }

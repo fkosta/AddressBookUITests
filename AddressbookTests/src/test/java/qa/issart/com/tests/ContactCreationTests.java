@@ -1,8 +1,6 @@
 package qa.issart.com.tests;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
@@ -19,7 +17,11 @@ public class ContactCreationTests extends TestBase{
     private List<GroupData> groupsList;
 
     @BeforeTest
-    public void getAppContacts(){
+    @Parameters({"dataFileName"})
+    public void getAppContacts(@Optional String dataFileName){
+        if(dataFileName!=null)
+            dataFile = dataFileName;
+
         appManager.getNavigationHelper().navigateToGroupPage();
         groupsList = appManager.getGroupHelper().getGroupsList().stream().collect(Collectors.toList());
         appManager.getNavigationHelper().navigateToContactPage();
@@ -49,22 +51,26 @@ public class ContactCreationTests extends TestBase{
             addedContacts = contactsAfterUI.stream().filter(c->!contactsBeforeUI.contains(c)).collect(Collectors.toSet());
         }
         newContact.withId(addedContacts.iterator().next().getId());
-        logger.info("Contacts in list: "+addedContacts.toString());
-        logger.info("Added contact "+newContact.toString());
-        assertThat(addedContacts, new withElementsInOut<ContactData>(newContact));
+        logger.info("Added new contact id:"+newContact.getId()+" first name: "+newContact.getFirstname()+
+                " last name: "+newContact.getLastname()+" address: "+newContact.getAddress()+" phones: "+
+                newContact.getHome()+", "+newContact.getMobile()+", "+newContact.getWork()+", "+newContact.getPhone2()+
+                " emails: "+newContact.getEmail()+", "+newContact.getEmail2()+", "+newContact.getEmail3());
+
         if(useDB){
             processedContacts.add(newContact);
             contactsBeforeDB = contactsAfterDB;
         }
         else
             contactsBeforeUI = contactsAfterUI;
+
+        assertThat(addedContacts, new HasTheOnlyElement<ContactData>(newContact));
     }
 
     @AfterTest
     public void verifyContacts(){
         if(useDB){
             contactsAfterUI = appManager.getContactHelper().getContactsList();
-            assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI,processedContacts,"creation"));
+            assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI,processedContacts,null));
         }
     }
 }

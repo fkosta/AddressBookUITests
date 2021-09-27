@@ -1,0 +1,52 @@
+15870 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+17577 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:518 name: RIY7YgXQPVKNYMxMs0AY
+17587 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+19192 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:519 name: IuPcGzaxZxZwurjHkIOj
+19193 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+20703 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:520 name: KyitVdif8CxAaD3kG6O5
+20705 [main] INFO  qa.issart.com.tests.TestBase - Started test addToGroupList
+22270 [main] INFO  qa.issart.com.tests.TestBase - Added new group id:521 name: 68IlT5aqPOMChZEX3SM8
+39030 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+47969 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:405 first name: Wsj5PHuwFDMOztN6Otks last name: BvLFvFj37ASorQw71ZTy address: HoRVjGA6gJH4v4odMDFo phones: 0095275709, 3985476530, 9575345636, 4267073868 emails: bOsrthjKj9@ogk0PCyX6k.su, zvSGdAD6DI@7fhvAkT7Lo.br, efcxAQmvjE@a5jsChAaqD.org
+47970 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+56755 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:406 first name: oG7fSGNBdIk0V5smjh8f last name: 0EuHOTQRNWZF6xOivdTM address: vIFlGUYJoIDBLgavCqD7 phones: 4817402984, 0145239278, 1644999562, 0751779189 emails: W594A1T94j@levQeqz7nK.de, QlDAhhFAVK@FzRGGWIHnX.org, pfnqr09QSD@JxYszmBrVm.az
+56756 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+65729 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:407 first name: TONPGbQov2ngZSqEUZKF last name: 8mGNM46HqlAMI4mehPxJ address: fXDkkOe78wcAfYnobFAc phones: 0082666368, 4537152142, 1436823702, 6707398193 emails: YeWc0SYJPm@I18uaTHYyT.ko, ww2WaZskCb@hsrv5qyy9q.jp, TRPXbgJCJH@PTqY1flQml.az
+65730 [main] INFO  qa.issart.com.tests.TestBase - Started test addToContactList
+78499 [main] INFO  qa.issart.com.tests.TestBase - Added new contact id:408 first name: AH2TVMuU3wN4Sug3YLyy last name: TO10iioNDNDS0ZrwRye3 address: LwUFbCl3Mm9ikIJpjORH phones: 2969523484, 6244350307, 7347279437, 6884374639 emails: dAEVBp2c3x@rGWlIlSwBD.fr, FV1jwDtuoj@rSEiFXqB2L.cn, 9MstXzsulg@QpFEtoQ9nU.us
+98144 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+99963 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 503 new group name: WpBtOXCvoHEkWN200Jnt old: IuPcGzaxZxZwurjHkIOj
+100124 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+101839 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 521 new group name: Guh4eZvK1goYOpTPH1WM old: 68IlT5aqPOMChZEX3SM8
+102032 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+103872 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 506 new group name: EkUrIgpRNcdMPBYwFa5a old: IQVezxd86Kdyz1FzjnF1
+104055 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList
+105929 [main] INFO  qa.issart.com.tests.TestBase - Modified group with id: 506 new group name: GjIJE34E6hJFlcudQOgH old: EkUrIgpRNcdMPBYwFa5a
+122558 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+146689 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 349 new contact firstname: qmGt6TUoZkzpqOqQESbs old: Natalia
+ new contact lastname: BhlK7m2r3FXg6VuBbRCx old: Talalova
+ new contact address: oCZRWpE1mGNx6ATWexIC old: I7gWyESpCrNkYUFMYUMY
+ new contact emails: 9GIGjjqu2F@sX3irT1ngv.az, Fhqe9Zo7nc@ncXZqpG833.pl, ynr8Qjp0lR@GiMdn2Co0q.nl old: null, null, null
+ new contact phones: 0082161321, 9143156114, 3474468484, 9874984319 old: null, null, null, null
+
+146712 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+173562 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 396 new contact firstname: kZjE58fFYlM9Jxm9TGBF old: AH2TVMuU3wN4Sug3YLyy
+ new contact lastname: S3ZpDdxDoYk29Fg0AJeA old: TO10iioNDNDS0ZrwRye3
+ new contact address: ISOcLg9xeAXseZlC6dzD old: LwUFbCl3Mm9ikIJpjORH
+ new contact emails: Y8MFL6ENUr@2i4T7BtopC.su, 6XVkTiRnnG@fOrOLEhe5r.am, o1V7wdXRu6@Cc6h2wPrRu.uk old: null, null, null
+ new contact phones: 3464724979, 2333851334, 7277496525, 8663099025 old: null, null, null, null
+
+173612 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+200685 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 407 new contact firstname: UbndPaD2JXxos6LwKtik old: TONPGbQov2ngZSqEUZKF
+ new contact lastname: U9H5lPvAJAOcHxZg41Ut old: 8mGNM46HqlAMI4mehPxJ
+ new contact address: g8ArQleAmsDYmhCVgH5c old: fXDkkOe78wcAfYnobFAc
+ new contact emails: lJg2AvKdv2@tfS5xAkkzK.net, vMs915Ld9M@OUOO0PvuoV.uk, jx3Yo8PTrV@KPRLcuWUcJ.cn old: null, null, null
+ new contact phones: 6442705938, 7897050212, 4787625798, 2593508766 old: null, null, null, null
+
+200834 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+227979 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 405 new contact firstname: BWq7KWk2Od3ELgclNoI5 old: Wsj5PHuwFDMOztN6Otks
+ new contact lastname: D3MlmlWBGwbrJuTf1b4O old: BvLFvFj37ASorQw71ZTy
+ new contact address: hkjFBhygJRLDveHqQ3Ex old: HoRVjGA6gJH4v4odMDFo
+ new contact emails: gF0KKJMrbK@QqXRv7MbMN.am, r4DWeNlB94@IuvyRwTT46.us, jQFxlCd5Vp@CdRmf83f9Q.cn old: null, null, null
+ new contact phones: 5427501343, 4855761576, 7233374262, 5301152305 old: null, null, null, null
+

@@ -1,0 +1,28 @@
+32708 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+56702 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 506 new contact firstname: CVxcVNnL4dspt3t0ijGu old: G8OHQNX7UWmsLGS1S3Vf
+ new contact lastname: wYcdMjHWsZsL1dZRtscb old: gB8sFD0OObrtaWGvUWVt
+ new contact address: xP0q1cf1hYJQ6qjGcTxl old: ppP2FrZ6MHH2hU236jls
+ new contact emails: 4bE6y2u0e1@WfkJLx9Rld.jp, dpZwo9K26N@rHHV7NYy0N.br, wvP8zpjlav@xWwKv8jxfw.nl old: null, null, null
+ new contact phones: 6580846370, 8496906928, 8266435048, 1505913052 old: null, null, null, null
+
+56866 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+86572 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 501 new contact firstname: zoo37RPrsLoxs469gqbS old: QpWImiQbf57b1nGjj1zl
+ new contact lastname: 3ylElT3W1u3Kv9Dpw2hy old: uYYXbnIkkdToIQIwbNSd
+ new contact address: gcKBkWUyyLiRt4VFXSIc old: HvxcrLFpuwlcgWONTV4o
+ new contact emails: JyAgUQUMA7@qBlbR4u7Ua.es, zxMtlOtkmD@mflUa2teNI.de, 4tAkZUannu@pdJfGyOgEj.au old: null, null, null
+ new contact phones: 7979854385, 8773240011, 8434108293, 4280009819 old: null, null, null, null
+
+86664 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+113710 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 505 new contact firstname: pyppPAuTxkgbzPsAkDNU old: ZRvK8DY0t55tqIrWytJp
+ new contact lastname: hH6mS5Lg89Vo9YhjlAAY old: IZtdHeweJxwMDk3RPKEr
+ new contact address: lAJIFShTyirWsCojxnzc old: z4I8adP7wSTN8uZKHzBH
+ new contact emails: 7ZOXEk1aGw@w6guuYAMEA.am, dfRh3bZYzE@XqUFSRbpe5.com, Yc0eMIQN1O@77vJMoOwQ9.lv old: null, null, null
+ new contact phones: 4518731592, 5134207964, 9867210948, 8739244691 old: null, null, null, null
+
+113840 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyContactFromList
+140814 [main] INFO  qa.issart.com.tests.TestBase - Modified contact with id: 511 new contact firstname: q5BATuVAMPvue5STDfH1 old: VPy8jgQrSg6E4y2jMcPm
+ new contact lastname: EtwT3tyWzS3aozscyxaf old: anHDZxqYbQryjDdQ0VRA
+ new contact address: S69TpRHRpmm5QVkonTxh old: x9PIVkQCgUb2apvJE6H7
+ new contact emails: qS1bf1O3dh@z9dSmXIilC.nl, qjAtd67asX@1YuYfTiFIS.de, wEMzadY9YW@6te8pwhLZS.com old: null, null, null
+ new contact phones: 6456249564, 0291139152, 9267608316, 7473247635 old: null, null, null, null
+

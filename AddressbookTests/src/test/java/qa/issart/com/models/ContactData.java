@@ -6,9 +6,8 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @XStreamAlias("contact")
 @Entity
@@ -392,19 +391,50 @@ public class ContactData {
     public ContactData composePhonesAndEmails(){
         StringBuilder sB = new StringBuilder();
         if(this.home.length()!=0)
-            sB.append(transform(this.home)).append("\n");
+            sB.append(transform(this.home));
 
-        if(this.mobile.length()!=0)
-            sB.append(transform(this.mobile)).append("\n");
+        if(this.mobile.length()!=0) {
+            if(sB.length()>0)
+                sB.append("\n");
 
-        if(this.work.length()!=0)
-            sB.append(transform(this.work)).append("\n");
+            sB.append(transform(this.mobile));
+        }
 
-        if(this.phone2.length()!=0)
+        if(this.work.length()!=0) {
+            if(sB.length()>0)
+                sB.append("\n");
+
+            sB.append(transform(this.work));
+        }
+
+        if(this.phone2.length()!=0){
+            if(sB.length()>0)
+                sB.append("\n");
+
             sB.append(transform(this.phone2));
+        }
 
         this.allPhones = sB.toString();
-        this.allEmails = this.email+"\n"+this.email2+"\n"+this.email3;
+
+        sB = new StringBuilder();
+        if(this.email.length()>0)
+            sB.append(this.email);
+
+        if (this.email2.length()>0) {
+            if (sB.length() > 0)
+                sB.append("\n");
+
+            sB.append(this.email2);
+        }
+
+        if (this.email3.length()>0) {
+            if (sB.length() > 0)
+                sB.append("\n");
+
+            sB.append(this.email3);
+        }
+
+        this.allEmails = sB.toString();
         return this;
     }
 
@@ -475,4 +505,18 @@ public class ContactData {
                 ", allPhones='" + allPhones + '\'' +
                 '}';
     }
+    public String printContactInfo() {
+        StringBuilder contactInfo = new StringBuilder();
+        contactInfo.append(firstname).append(" ").append(middlename).append(" ").append(lastname).append("\n").append(nickname);
+        contactInfo.append("\n").append(title).append("\n").append(company).append("\n").append(address).append("\n");
+        contactInfo.append(home).append("\n").append(mobile).append("\n").append(work).append("\n").append(fax).append("\n");
+        contactInfo.append(allEmails).append("\n").append(homepage).append("\n").append(getBirthday().toLowerCase()).append("\n");
+        contactInfo.append(getAnniversary().toLowerCase()).append("\n").append(address2).append("\n").append(phone2).append("\n").append(notes).append("\n");
+
+        List<GroupData> groupsList = contactGroups.stream().collect(Collectors.toList());
+        groupsList.sort(Comparator.comparing((GroupData gD) ->gD.getId()));
+        contactInfo.append(groupsList.stream().map(g->g.getName()).collect(Collectors.joining(", ")));
+        return contactInfo.toString();
+    }
 }
+

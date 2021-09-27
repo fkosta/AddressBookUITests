@@ -10,6 +10,7 @@ import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -20,7 +21,7 @@ public class DataGenerator {
     @Parameter(names = "-d", description = "type of generated data", required = true)
     private String dataType;
 
-    @Parameter(names = "-f", description = "file name with test data", required = false)
+    @Parameter(names = "-f", description = "file name with test data")
     private String fileName;
 
     @Parameter(names = "-t", description = "data file type", required = true)
@@ -29,7 +30,7 @@ public class DataGenerator {
     @Parameter(names = "-n", description = "number of records", required = true)
     private int recordsNum;
 
-    @Parameter(names = "-o", description = "random / indexed data", required = false)
+    @Parameter(names = "-o", description = "random / indexed data")
     private String dataMode = "r";
 
     private final String filePath = "src/test/resources/";
@@ -42,21 +43,54 @@ public class DataGenerator {
     private final Properties properties = new Properties();
     private final String projectPath = System.getProperty("user.dir");
 
+    public DataGenerator(String dataType, String dataMode, int recordsNum, String propFileName) throws IOException {
+        this.dataType = dataType;
+        this.dataMode = dataMode;
+        this.recordsNum = recordsNum;
+        this.properties.load(new FileReader(filePath+propFileName));
+    }
+
+    DataGenerator(){
+
+    }
+
+    public void initParameters(){
+        imagesPath = this.properties.getProperty("imagesPath");
+        imagesType = this.properties.getProperty("imagesType");
+        File imagesFolder = new File(imagesPath);
+
+        if(imagesType.equals("")){
+            imagesList = imagesFolder.list();
+        }
+        else {
+            this.imagesList = imagesFolder.list(new FilenameFilter() {
+                private Pattern pattern = Pattern.compile(imagesType);
+
+                @Override
+                public boolean accept(File dir, String name) {
+                    return pattern.matcher(name).matches();
+                }
+            });
+        }
+        dn = Integer.parseInt(properties.getProperty("domainsNum"));
+        rsl = Integer.parseInt(properties.getProperty("randomStringLength"));
+    }
+
     private String selectImage() {
         return projectPath+"\\"+imagesPath+imagesList[randomFactory.getRInt(imagesList.length)];
     }
 
-    class Generator<T>{
-        List<T> dataList = new ArrayList<>();
+    public class Generator<T>{
+        public List<T> dataList = new ArrayList<>();
         Class<T> dataClass;
         T dataObject;
 
-        Generator(Class<T> dataClass) throws IllegalAccessException, InstantiationException {
+        public Generator(Class<T> dataClass){
             this.dataClass = dataClass;
         }
 
-        private T buildDataObject() throws IllegalAccessException, InstantiationException {
-            this.dataObject = dataClass.newInstance();
+        private T buildDataObject() throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+            this.dataObject = dataClass.getDeclaredConstructor().newInstance();
             if(dataObject instanceof ContactData){
                 ContactData objectData = (ContactData) dataObject;
                 objectData.withFirstname(randomFactory.getRString(rsl)).withMiddlename(randomFactory.getRString(rsl))
@@ -101,7 +135,7 @@ public class DataGenerator {
                 return null;
         }
 
-        void generateDataList() throws InstantiationException, IllegalAccessException {
+        public void generateDataList() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
             for(int ind=0;ind<recordsNum;ind++){
                 if(dataMode.equals("r")) {
                     dataList.add(buildDataObject());
@@ -113,7 +147,7 @@ public class DataGenerator {
         }
     }
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         DataGenerator dataGenerator = new DataGenerator();
         JCommander jCommander = JCommander.newBuilder().addObject(dataGenerator).build();
 
@@ -169,9 +203,9 @@ public class DataGenerator {
         dataGenerator.writeToFile(generator.dataList, genDataType);
     }
 
-    private <T> void writeToFile(List<T> dataList, Class genDataType) throws IOException, ClassNotFoundException {
+    private <T> void writeToFile(List<T> dataList, Class genDataType) throws IOException {
 
-        BufferedWriter formattedData = new BufferedWriter(new FileWriter(new File(filePath+fileName+"."+fileType)));
+        BufferedWriter formattedData = new BufferedWriter(new FileWriter(filePath+fileName+"."+fileType));
 
         if(fileType.equals("csv")){
             for(int j=0;j<dataList.size();j++){

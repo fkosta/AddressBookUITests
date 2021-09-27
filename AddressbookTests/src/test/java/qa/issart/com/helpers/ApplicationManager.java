@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -26,7 +25,7 @@ public class ApplicationManager {
 
     public void init() throws IOException {
         String target = System.getProperty("target");
-        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties",target))));
+        properties.load(new FileReader(String.format("src/test/resources/%s.properties",target)));
         if(browser.equals("Firefox"))
             wD = new FirefoxDriver();
         else
@@ -39,7 +38,6 @@ public class ApplicationManager {
         groupHelper = new GroupHelper(wD);
         navigationHelper.navigateToPage(properties.getProperty("app.url"));
         sessionHelper.login(properties.getProperty("app.login"),properties.getProperty("app.password"));
-
     }
 
     public void stop() {

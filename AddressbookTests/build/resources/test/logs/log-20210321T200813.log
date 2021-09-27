@@ -1,8 +1,0 @@
-12742 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='lPkZh8EMCZ9OaestcoUX'}]
-14500 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=427, group_name='oiZrOEuIipzck3wame8A'}
-15027 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='RfleswN4hQNYWUfW1L9b'}]
-16716 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=441, group_name='RfleswN4hQNYWUfW1L9b'}
-17217 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='NmXiQPXFSrbfvw20QycT'}]
-18986 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=435, group_name='FHVpx4P0neB4MIE6med2'}
-19486 [main] INFO  qa.issart.com.tests.TestBase - Started test modifyGroupFromList with parameters [GroupData{group_id=0, group_name='60sCUifIV8ESIfrbdsas'}]
-21433 [main] INFO  qa.issart.com.tests.TestBase - The modified group is GroupData{group_id=442, group_name='gdjp9RIPI1w0is6fhbmm'}
