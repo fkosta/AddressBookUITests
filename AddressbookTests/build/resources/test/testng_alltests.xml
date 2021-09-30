@@ -59,4 +59,42 @@
             </class>
         </classes>
     </test>
+    <test name="Test deletion of all contacts">
+        <classes>
+            <class name="qa.issart.com.tests.ContactDeletionTests">
+                <methods>
+                    <include name="deleteAllContacts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test deletion of all groups">
+        <classes>
+            <class name="qa.issart.com.tests.GroupDeletionTests">
+                <methods>
+                    <include name="deleteAllGroups"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts creation in a filtered list">
+        <parameter name="dataFileName" value="contactsList.xml"/>
+        <classes>
+            <class name="qa.issart.com.tests.ContactsCreationTestsFiltered">
+                <methods>
+                    <include name="addToFilteredContactList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts modification in a filtered list">
+        <parameter name="dataFileName" value="contactsList.csv"/>
+        <classes>
+            <class name="qa.issart.com.tests.ContactsModificationTestsFiltered">
+                <methods>
+                    <include name="modifyContactInFilteredList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

@@ -21,12 +21,12 @@ qa/issart/com/generators/DataGenerator.java
  qa.issart.com.generators.DataGenerator$Generator
 qa/issart/com/helpers/GroupHelper.java
  qa.issart.com.helpers.GroupHelper
-qa/issart/com/tests/GroupDeletionTests.java
- qa.issart.com.tests.GroupDeletionTests
+qa/issart/com/tests/ContactsBirthdaysTest.java
+ qa.issart.com.tests.ContactsBirthdaysTest
 qa/issart/com/helpers/NavigationHelper.java
  qa.issart.com.helpers.NavigationHelper
-qa/issart/com/tests/GroupModificationTests.java
- qa.issart.com.tests.GroupModificationTests
+qa/issart/com/tests/ContactDeletionTests.java
+ qa.issart.com.tests.ContactDeletionTests
 qa/issart/com/tests/GroupCreationTests.java
  qa.issart.com.tests.GroupCreationTests
 qa/issart/com/helpers/ContactHelper.java
@@ -35,12 +35,14 @@ qa/issart/com/tests/ContactPageTests.java
  qa.issart.com.tests.ContactPageTests
 qa/issart/com/tests/ContactsCreationTestsFiltered.java
  qa.issart.com.tests.ContactsCreationTestsFiltered
-qa/issart/com/tests/ContactModificationTest.java
- qa.issart.com.tests.ContactModificationTest
+qa/issart/com/tests/GroupDeletionTests.java
+ qa.issart.com.tests.GroupDeletionTests
 qa/issart/com/tests/ContactsModificationTestsFiltered.java
  qa.issart.com.tests.ContactsModificationTestsFiltered
-qa/issart/com/tests/ContactDeletionTests.java
- qa.issart.com.tests.ContactDeletionTests
+qa/issart/com/tests/TestBase.java
+ qa.issart.com.tests.TestBase
+ qa.issart.com.tests.TestBase$1
+ qa.issart.com.tests.TestBase$2
 qa/issart/com/tests/ContactsRemovalFromGroupTests.java
  qa.issart.com.tests.ContactsRemovalFromGroupTests
 qa/issart/com/tests/ContactCreationTests.java
@@ -51,9 +53,7 @@ qa/issart/com/helpers/ApplicationManager.java
  qa.issart.com.helpers.ApplicationManager
 qa/issart/com/tests/ContactsDeletionTestsFiltered.java
  qa.issart.com.tests.ContactsDeletionTestsFiltered
-qa/issart/com/tests/TestBase.java
- qa.issart.com.tests.TestBase
- qa.issart.com.tests.TestBase$1
- qa.issart.com.tests.TestBase$2
-qa/issart/com/tests/ContactsBirthdaysTest.java
- qa.issart.com.tests.ContactsBirthdaysTest
+qa/issart/com/tests/GroupModificationTests.java
+ qa.issart.com.tests.GroupModificationTests
+qa/issart/com/tests/ContactModificationTest.java
+ qa.issart.com.tests.ContactModificationTest

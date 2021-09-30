@@ -24,8 +24,8 @@ public class ContactDeletionTests extends TestBase{
     public void getContactsInApp() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
         appManager.getNavigationHelper().navigateToContactPage();
         contactsBeforeUI = appManager.getContactHelper().getContactsList();
-        if(contactsBeforeUI.size()==0){
-            addContactsToAddressbook(10);
+        if(contactsBeforeUI.size()<10){
+            addContactsToAddressbook(10-contactsBeforeUI.size());
             contactsBeforeUI = appManager.getContactHelper().getContactsList();
         }
 
@@ -78,14 +78,19 @@ public class ContactDeletionTests extends TestBase{
     private List<Integer> parceIndList(String[] indList, int contactsNum) {
         List<Integer> indices = new ArrayList<>();
         for(String key:indList){
-            if(key.equals("F"))
-                indices.add(0);
-            else if(key.equals("L"))
-                indices.add(contactsNum-1);
-            else if(key.equals("R"))
-                indices.add(rand.nextInt(contactsNum-2)+1);
-            else
-                break;
+            switch (key) {
+                case "F":
+                    indices.add(0);
+                    break;
+                case "L":
+                    indices.add(contactsNum - 1);
+                    break;
+                case "R":
+                    indices.add(rand.nextInt(contactsNum - 2) + 1);
+                    break;
+                default:
+                    break;
+            }
         }
         return indices;
     }
@@ -96,8 +101,8 @@ public class ContactDeletionTests extends TestBase{
         ContactData nextContact;
         while (iterator.hasNext()) {
             nextContact = iterator.next();
-            sB.append(" id: " + nextContact.getId() + " first name: " + nextContact.getFirstname() + " last name " +
-                    nextContact.getLastname()+"\n");
+            sB.append(" id: ").append(nextContact.getId()).append(" first name: ").append(nextContact.getFirstname())
+                    .append(" last name ").append(nextContact.getLastname()).append("\n");
         }
         return sB.toString();
     }

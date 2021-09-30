@@ -26,7 +26,7 @@ public class ContactModificationTest extends TestBase{
         appManager.getNavigationHelper().navigateToContactPage();
         contactsBeforeUI = appManager.getContactHelper().getContactsList();
 
-        if (contactsBeforeUI.size()==0){
+        if (contactsBeforeUI.size()<10){
             addContactsToAddressbook(10);
             contactsBeforeUI = appManager.getContactHelper().getContactsList();
         }
