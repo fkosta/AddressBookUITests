@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CRUD contacts and groups" verbose="1">
+    <test name="Test groups creation">
+        <parameter name="dataFileName" value="groupsList.json"/>
+        <classes>
+            <class name="qa.issart.com.tests.GroupCreationTests">
+                <methods>
+                    <include name="addToGroupList"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts creation">
+        <parameter name="dataFileName" value="contactsList.json"/>
+        <classes>
+            <class name="qa.issart.com.tests.ContactCreationTests">
+                <methods>
+                    <include name="addToContactList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test groups modification">
+        <parameter name="dataFileName" value="groupsList.csv"/>
+        <classes>
+            <class name="qa.issart.com.tests.GroupModificationTests">
+                <methods>
+                    <include name="modifyGroupFromList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts modification">
+        <parameter name="dataFileName" value="contactsList.csv"/>
+        <classes>
+            <class name="qa.issart.com.tests.ContactModificationTest">
+                <methods>
+                    <include name="modifyContactFromList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test groups deletion">
+        <classes>
+            <class name="qa.issart.com.tests.GroupDeletionTests">
+                <methods>
+                    <include name="deleteGroupsByIndices"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts deletion">
+        <classes>
+            <class name="qa.issart.com.tests.ContactDeletionTests">
+                <methods>
+                    <include name="deleteContactsByIndices"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

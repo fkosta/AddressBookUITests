@@ -23,3 +23,18 @@ dependencies {
     implementation 'org.hibernate:hibernate-core:5.4.30.Final'
     implementation 'mysql:mysql-connector-java:8.0.23'
 }
+
+task groupsContactsCRUDTest(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/testng_crud_groups_contacts.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty('browser',"${browser}")
+    }
+    if(project.hasProperty('target')){
+        systemProperty('target',"${target}")
+    }
+    if(project.hasProperty('useDB')){
+        systemProperty('useDB',"${useDB}")
+    }
+}

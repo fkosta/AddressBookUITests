@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="CRUD contacts and groups" verbose="1">
+<suite name="Regression tests" verbose="1">
     <test name="Test groups creation">
         <parameter name="dataFileName" value="groupsList.json"/>
         <classes>
@@ -93,6 +93,24 @@
             <class name="qa.issart.com.tests.ContactsModificationTestsFiltered">
                 <methods>
                     <include name="modifyContactInFilteredList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test contacts deletion in a filtered list">
+        <classes>
+            <class name="qa.issart.com.tests.ContactsDeletionTestsFiltered">
+                <methods>
+                    <include name="deleteContactsByIndices"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test all contact deletion in a filtered list">
+        <classes>
+            <class name="qa.issart.com.tests.ContactsDeletionTestsFiltered">
+                <methods>
+                    <include name="deleteAllContacts"/>
                 </methods>
             </class>
         </classes>
