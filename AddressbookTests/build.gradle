@@ -38,3 +38,19 @@ task groupsContactsCRUDTest(type: Test){
         systemProperty('useDB',"${useDB}")
     }
 }
+
+task groupsCRUDTest(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/testng_crud_groups.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty('browser',"${browser}")
+    }
+    if(project.hasProperty('target')){
+        systemProperty('target',"${target}")
+    }
+    if(project.hasProperty('useDB')){
+        systemProperty('useDB',"${useDB}")
+    }
+}
+

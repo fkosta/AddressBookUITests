@@ -3,9 +3,13 @@ package qa.issart.com.helpers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -26,10 +30,21 @@ public class ApplicationManager {
     public void init() throws IOException {
         String target = System.getProperty("target");
         properties.load(new FileReader(String.format("src/test/resources/%s.properties",target)));
-        if(browser.equals("Firefox"))
-            wD = new FirefoxDriver();
-        else
-            wD = new ChromeDriver();
+        if(properties.getProperty("remote.server").equals("")) {
+            if (browser.equals("Firefox"))
+                wD = new FirefoxDriver();
+            else
+                wD = new ChromeDriver();
+        }
+        else{
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            if(browser.equals("Firefox"))
+                capabilities.setBrowserName(BrowserType.FIREFOX);
+            else
+                capabilities.setBrowserName(BrowserType.CHROME);
+
+            wD = new RemoteWebDriver(new URL(properties.getProperty("remote.server")), capabilities);
+        }
 
         wD.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         sessionHelper = new SessionHelper(wD);

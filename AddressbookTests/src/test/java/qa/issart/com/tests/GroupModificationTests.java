@@ -27,7 +27,7 @@ public class GroupModificationTests extends TestBase{
         groupsBeforeUI = appManager.getGroupHelper().getGroupsList();
 
         if(groupsBeforeUI.size()<10){
-            addGroupsToAddressbook(10);
+            addGroupsToAddressbook(10-groupsBeforeUI.size());
             groupsBeforeUI = appManager.getGroupHelper().getGroupsList();
         }
 

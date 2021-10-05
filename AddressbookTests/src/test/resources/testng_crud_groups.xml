@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CRUD contacts and groups" verbose="1">
+    <test name="Test groups creation">
+        <parameter name="dataFileName" value="groupsList.xml"/>
+        <classes>
+            <class name="qa.issart.com.tests.GroupCreationTests">
+                <methods>
+                    <include name="addToGroupList"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+    <test name="Test groups modification">
+        <parameter name="dataFileName" value="groupsList.json"/>
+        <classes>
+            <class name="qa.issart.com.tests.GroupModificationTests">
+                <methods>
+                    <include name="modifyGroupFromList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test groups deletion">
+        <classes>
+            <class name="qa.issart.com.tests.GroupDeletionTests">
+                <methods>
+                    <include name="deleteGroupsByIndices"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
