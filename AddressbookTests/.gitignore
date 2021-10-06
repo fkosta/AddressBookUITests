@@ -1,0 +1,5 @@
+# ignoring logs
+*.log
+build/
+.gradle/
+gradle/

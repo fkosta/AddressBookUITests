@@ -1,59 +1,59 @@
 qa/issart/com/helpers/BaseHelper.java
  qa.issart.com.helpers.BaseHelper
-qa/issart/com/models/GroupData.java
- qa.issart.com.models.GroupData
+qa/issart/com/tests/GroupDeletionTests.java
+ qa.issart.com.tests.GroupDeletionTests
 qa/issart/com/helpers/ContactHelper.java
  qa.issart.com.helpers.ContactHelper
-qa/issart/com/helpers/GroupHelper.java
- qa.issart.com.helpers.GroupHelper
+qa/issart/com/tests/ContactPageTests.java
+ qa.issart.com.tests.ContactPageTests
 qa/issart/com/generators/RandomFactory.java
  qa.issart.com.generators.RandomFactory
 qa/issart/com/tests/withElementsInOut.java
  qa.issart.com.tests.withElementsInOut
 qa/issart/com/helpers/DBManager.java
  qa.issart.com.helpers.DBManager
-qa/issart/com/generators/DataGenerator.java
- qa.issart.com.generators.DataGenerator
- qa.issart.com.generators.DataGenerator$1
- qa.issart.com.generators.DataGenerator$2
- qa.issart.com.generators.DataGenerator$Generator
-qa/issart/com/helpers/SessionHelper.java
- qa.issart.com.helpers.SessionHelper
-qa/issart/com/helpers/NavigationHelper.java
- qa.issart.com.helpers.NavigationHelper
-qa/issart/com/models/ContactData.java
- qa.issart.com.models.ContactData
-qa/issart/com/tests/HasTheOnlyElement.java
- qa.issart.com.tests.HasTheOnlyElement
-qa/issart/com/tests/GroupDeletionTests.java
- qa.issart.com.tests.GroupDeletionTests
-qa/issart/com/tests/ContactPageTests.java
- qa.issart.com.tests.ContactPageTests
-qa/issart/com/tests/ContactsCreationTestsFiltered.java
- qa.issart.com.tests.ContactsCreationTestsFiltered
-qa/issart/com/tests/ContactModificationTest.java
- qa.issart.com.tests.ContactModificationTest
-qa/issart/com/tests/ContactsModificationTestsFiltered.java
- qa.issart.com.tests.ContactsModificationTestsFiltered
-qa/issart/com/tests/ContactDeletionTests.java
- qa.issart.com.tests.ContactDeletionTests
-qa/issart/com/tests/GroupModificationTests.java
- qa.issart.com.tests.GroupModificationTests
-qa/issart/com/tests/ContactsRemovalFromGroupTests.java
- qa.issart.com.tests.ContactsRemovalFromGroupTests
 qa/issart/com/tests/ContactCreationTests.java
  qa.issart.com.tests.ContactCreationTests
 qa/issart/com/tests/ContactsListTests.java
  qa.issart.com.tests.ContactsListTests
-qa/issart/com/tests/GroupCreationTests.java
- qa.issart.com.tests.GroupCreationTests
-qa/issart/com/helpers/ApplicationManager.java
- qa.issart.com.helpers.ApplicationManager
-qa/issart/com/tests/ContactsDeletionTestsFiltered.java
- qa.issart.com.tests.ContactsDeletionTestsFiltered
 qa/issart/com/tests/TestBase.java
  qa.issart.com.tests.TestBase
  qa.issart.com.tests.TestBase$1
  qa.issart.com.tests.TestBase$2
 qa/issart/com/tests/ContactsBirthdaysTest.java
  qa.issart.com.tests.ContactsBirthdaysTest
+qa/issart/com/tests/ContactsCreationTestsFiltered.java
+ qa.issart.com.tests.ContactsCreationTestsFiltered
+qa/issart/com/models/ContactData.java
+ qa.issart.com.models.ContactData
+qa/issart/com/helpers/NavigationHelper.java
+ qa.issart.com.helpers.NavigationHelper
+qa/issart/com/tests/ContactModificationTest.java
+ qa.issart.com.tests.ContactModificationTest
+qa/issart/com/generators/DataGenerator.java
+ qa.issart.com.generators.DataGenerator
+ qa.issart.com.generators.DataGenerator$1
+ qa.issart.com.generators.DataGenerator$2
+ qa.issart.com.generators.DataGenerator$Generator
+qa/issart/com/tests/ContactsModificationTestsFiltered.java
+ qa.issart.com.tests.ContactsModificationTestsFiltered
+qa/issart/com/helpers/SessionHelper.java
+ qa.issart.com.helpers.SessionHelper
+qa/issart/com/tests/ContactDeletionTests.java
+ qa.issart.com.tests.ContactDeletionTests
+qa/issart/com/tests/GroupModificationTests.java
+ qa.issart.com.tests.GroupModificationTests
+qa/issart/com/tests/ContactsRemovalFromGroupTests.java
+ qa.issart.com.tests.ContactsRemovalFromGroupTests
+qa/issart/com/tests/GroupCreationTests.java
+ qa.issart.com.tests.GroupCreationTests
+qa/issart/com/helpers/ApplicationManager.java
+ qa.issart.com.helpers.ApplicationManager
+qa/issart/com/models/GroupData.java
+ qa.issart.com.models.GroupData
+qa/issart/com/tests/HasTheOnlyElement.java
+ qa.issart.com.tests.HasTheOnlyElement
+qa/issart/com/helpers/GroupHelper.java
+ qa.issart.com.helpers.GroupHelper
+qa/issart/com/tests/ContactsDeletionTestsFiltered.java
+ qa.issart.com.tests.ContactsDeletionTestsFiltered
