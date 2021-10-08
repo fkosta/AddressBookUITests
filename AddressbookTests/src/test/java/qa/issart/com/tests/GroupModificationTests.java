@@ -50,8 +50,9 @@ public class GroupModificationTests extends TestBase{
             changedGroups.putIfAbsent(modifiedGroup.getId(),modifiedGroup);
             groupsAfterDB = dbManager.getGroupsList();
             assertThat(groupsAfterDB, new withElementsInOut(groupsBeforeDB,newGroup,modifiedGroup));
-            groupsBeforeDB.add(newGroup);
-            groupsBeforeDB.remove(modifiedGroup);
+//            groupsBeforeDB.add(newGroup);
+//            groupsBeforeDB.remove(modifiedGroup);
+            groupsBeforeDB = groupsAfterDB;
         }
         else{
             groupsAfterUI = appManager.getGroupHelper().getGroupsList();
