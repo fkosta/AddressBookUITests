@@ -1,0 +1,148 @@
+{
+  "uid" : "32fd84b619566eb6",
+  "name" : "modifyGroupFromList",
+  "fullName" : "qa.issart.com.tests.GroupModificationTests.modifyGroupFromList",
+  "historyId" : "b5ab69be2548a1ae5496bf688ad71cf0",
+  "time" : {
+    "start" : 1633976996149,
+    "stop" : 1633976998185,
+    "duration" : 2036
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getGroupsInApp",
+    "time" : {
+      "start" : 1633976982864,
+      "stop" : 1633976989739,
+      "duration" : 6875
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "logTestStart",
+    "time" : {
+      "start" : 1633976996113,
+      "stop" : 1633976996114,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1633976816047,
+      "stop" : 1633976889717,
+      "duration" : 73670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "verifyGroupsInUI",
+    "time" : {
+      "start" : 1633977002668,
+      "stop" : 1633977002989,
+      "duration" : 321
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1633977351573,
+      "stop" : 1633977353961,
+      "duration" : 2388
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "qa.issart.com.tests.GroupModificationTests"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.issart.com.tests.GroupModificationTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "modifyGroupFromList"
+  }, {
+    "name" : "parentSuite",
+    "value" : "CRUD contacts and groups"
+  }, {
+    "name" : "suite",
+    "value" : "Test groups modification"
+  }, {
+    "name" : "subSuite",
+    "value" : "qa.issart.com.tests.GroupModificationTests"
+  }, {
+    "name" : "host",
+    "value" : "ALPHARETTA"
+  }, {
+    "name" : "thread",
+    "value" : "7928@ALPHARETTA.Test worker(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "GroupData{group_id=0, group_name='e6jMm7Ew07wL6vwiCrhe'}"
+  }, {
+    "name" : "dataFileName",
+    "value" : "groupsList.csv"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "32fd84b619566eb6.json",
+  "parameterValues" : [ "GroupData{group_id=0, group_name='e6jMm7Ew07wL6vwiCrhe'}", "groupsList.csv" ]
+}

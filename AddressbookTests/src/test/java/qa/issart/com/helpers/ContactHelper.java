@@ -9,6 +9,8 @@ import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class ContactHelper extends BaseHelper {
@@ -182,7 +184,7 @@ public class ContactHelper extends BaseHelper {
         return contactDataUI;
     }
 
-    public String getContactInfo(int ind) {
+    public String getContactInfo0(int ind) {
         click(By.xpath(String.format("//a[@href=\"view.php?id=%s\"]", ind)));
         String contactHTML = wD.findElement(By.xpath("//*[@id=\"content\"]")).getText();
         String[] contactData = contactHTML.split("\n\n");
@@ -349,5 +351,31 @@ public class ContactHelper extends BaseHelper {
             }
         }
         return BPMap;
+    }
+
+    public String getContactInfo(int id){
+        click(By.xpath(String.format("//a[@href=\"view.php?id=%s\"]", id)));
+        String tmpText = wD.findElement(By.xpath("//*[@id=\"content\"]")).getText();
+        tmpText = tmpText.replaceAll("\n{2,}","\n");
+        return tmpText;
+    }
+
+    public Set<String> parsePrintPage() {
+        Set<String> parsedSet = new HashSet<>();
+        List<WebElement> contactsInfo;
+        int colsInPrint;
+        String tmpText;
+        int rowsInPrint = wD.findElements(By.xpath("/html/body/div/div[1]/table/tbody/tr")).size();
+        for(int j0=1;j0<=rowsInPrint;j0++){
+            contactsInfo =wD.findElements(By.xpath(String.format("/html/body/div/div[1]/table/tbody/tr[%d]/td",j0)));
+            colsInPrint = contactsInfo.size();
+            for(int j1=0;j1<colsInPrint;j1++){
+                tmpText = contactsInfo.get(j1).getText();
+                tmpText = tmpText.replaceAll("\n{2,}","\n");
+                if(tmpText.length()>2)
+                    parsedSet.add(tmpText);
+            }
+        }
+        return parsedSet;
     }
 }

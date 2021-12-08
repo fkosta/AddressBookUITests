@@ -6,10 +6,8 @@ import com.thoughtworks.xstream.XStream;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.DataProvider;
+import org.testng.ITestContext;
+import org.testng.annotations.*;
 import qa.issart.com.generators.DataGenerator;
 import qa.issart.com.helpers.ApplicationManager;
 import qa.issart.com.helpers.DBManager;
@@ -25,6 +23,7 @@ import java.lang.reflect.Method;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Listeners(TestListener.class)
 public class TestBase {
     static final ApplicationManager appManager = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
     static final DBManager dbManager = new DBManager();
@@ -46,8 +45,9 @@ public class TestBase {
     static Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeSuite
-    public void setUp() throws IOException {
+    public void setUp(ITestContext context) throws IOException {
         appManager.init();
+        context.setAttribute("app",appManager);
         if(System.getProperty("useDB").equals("false"))
             useDB = false;
         else

@@ -1,0 +1,145 @@
+{
+  "uid" : "ef037f954602c72",
+  "name" : "deleteContactsByIndices",
+  "fullName" : "qa.issart.com.tests.ContactDeletionTests.deleteContactsByIndices",
+  "historyId" : "6ccf42bc03d0656339e79a1ef2b1d7c6",
+  "time" : {
+    "start" : 1633977316102,
+    "stop" : 1633977335939,
+    "duration" : 19837
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getContactsInApp",
+    "time" : {
+      "start" : 1633977156433,
+      "stop" : 1633977174129,
+      "duration" : 17696
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "logTestStart",
+    "time" : {
+      "start" : 1633977316070,
+      "stop" : 1633977316070,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1633976816047,
+      "stop" : 1633976889717,
+      "duration" : 73670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "verifyContactsInUI",
+    "time" : {
+      "start" : 1633977335942,
+      "stop" : 1633977351558,
+      "duration" : 15616
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1633977351573,
+      "stop" : 1633977353961,
+      "duration" : 2388
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "qa.issart.com.tests.ContactDeletionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.issart.com.tests.ContactDeletionTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteContactsByIndices"
+  }, {
+    "name" : "parentSuite",
+    "value" : "CRUD contacts and groups"
+  }, {
+    "name" : "suite",
+    "value" : "Test contacts deletion"
+  }, {
+    "name" : "subSuite",
+    "value" : "qa.issart.com.tests.ContactDeletionTests"
+  }, {
+    "name" : "host",
+    "value" : "ALPHARETTA"
+  }, {
+    "name" : "thread",
+    "value" : "7928@ALPHARETTA.Test worker(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "[F, L, R]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ef037f954602c72.json",
+  "parameterValues" : [ "[F, L, R]" ]
+}

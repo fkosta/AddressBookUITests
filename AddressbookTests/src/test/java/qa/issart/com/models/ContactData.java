@@ -6,8 +6,13 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static java.util.Calendar.*;
+import static java.util.Calendar.DAY_OF_MONTH;
 
 @XStreamAlias("contact")
 @Entity
@@ -95,6 +100,13 @@ public class ContactData {
     @JoinTable(name="address_in_groups", joinColumns=@JoinColumn(name="id"), inverseJoinColumns=@JoinColumn(name="group_id"))
     private Set<GroupData> contactGroups = new HashSet<>();
 
+    @Transient
+    private SimpleDateFormat sdf = new SimpleDateFormat("d-MMMM-yyyy",Locale.ENGLISH);
+    @Transient
+    private Calendar calendar0 = new GregorianCalendar();
+    @Transient
+    private Calendar calendar1 = new GregorianCalendar();
+
     public ContactData(){
         fullCMP=false;
     }
@@ -143,12 +155,26 @@ public class ContactData {
         return id;
     }
 
-    public String getBirthday(){
-        return String.valueOf(bday)+"-"+bmonth+"-"+byear;
+    public String getBirthday(int dateFormat) {
+        if(dateFormat==0)
+            return String.valueOf(bday)+"-"+bmonth+"-"+byear;
+        else {
+            if(bmonth.length()>1)
+                bmonth = bmonth.substring(0,1).toUpperCase()+bmonth.substring(1).toLowerCase();
+
+            return String.valueOf(bday) + ". " + bmonth + " " + byear;
+        }
     }
 
-    public String getAnniversary(){
-        return String.valueOf(aday)+"-"+amonth+"-"+ayear;
+    public String getAnniversary(int dateFormat) {
+        if(dateFormat==0)
+            return String.valueOf(aday)+"-"+amonth+"-"+ayear;
+        else {
+            if(amonth.length()>1)
+                amonth = amonth.substring(0,1).toUpperCase()+amonth.substring(1).toLowerCase();
+
+            return String.valueOf(aday) + ". " + amonth + " " + ayear;
+        }
     }
 
     public String getAllEmails(){
@@ -505,18 +531,69 @@ public class ContactData {
                 ", allPhones='" + allPhones + '\'' +
                 '}';
     }
-    public String printContactInfo() {
+    public String printContactInfo(boolean withGroups, boolean withLabels, int dateFormat){
+        calendar0.setTime(new Date());
         StringBuilder contactInfo = new StringBuilder();
         contactInfo.append(firstname).append(" ").append(middlename).append(" ").append(lastname).append("\n").append(nickname);
         contactInfo.append("\n").append(title).append("\n").append(company).append("\n").append(address).append("\n");
-        contactInfo.append(home).append("\n").append(mobile).append("\n").append(work).append("\n").append(fax).append("\n");
-        contactInfo.append(allEmails).append("\n").append(homepage).append("\n").append(getBirthday().toLowerCase()).append("\n");
-        contactInfo.append(getAnniversary().toLowerCase()).append("\n").append(address2).append("\n").append(phone2).append("\n").append(notes).append("\n");
+        if(withLabels){
+            contactInfo.append("H: ").append(home).append("\n").append("M: ").append(mobile).append("\n");
+            contactInfo.append("W: ").append(work).append("\n").append("F: ").append(fax).append("\n");
+        }
+        else {
+            contactInfo.append(home).append("\n").append(mobile).append("\n");
+            contactInfo.append(work).append("\n").append(fax).append("\n");
+        }
 
-        List<GroupData> groupsList = contactGroups.stream().collect(Collectors.toList());
-        groupsList.sort(Comparator.comparing((GroupData gD) ->gD.getId()));
-        contactInfo.append(groupsList.stream().map(g->g.getName()).collect(Collectors.joining(", ")));
+        contactInfo.append(allEmails).append("\n");
+
+        String bAge = String.format(" (%s)",getAge(getBirthday(0)));
+        String aAge = String.format(" (%s)",getAge(getAnniversary(0)));
+
+        if(withLabels) {
+            contactInfo.append("Homepage:\n").append(homepage).append("\n");
+            contactInfo.append("Birthday ").append(getBirthday(dateFormat)).append(bAge).append("\n");
+            contactInfo.append("Anniversary ").append(getAnniversary(dateFormat)).append(aAge).append("\n");
+        }
+        else {
+            contactInfo.append(homepage).append("\n").append(getBirthday(dateFormat).toLowerCase()).append("\n");
+            contactInfo.append(getAnniversary(dateFormat).toLowerCase()).append("\n");
+        }
+
+        contactInfo.append(address2).append("\n");
+
+        if(withLabels)
+            contactInfo.append("P: ").append(phone2).append("\n").append(notes);
+        else
+            contactInfo.append(phone2).append("\n").append(notes);
+
+        if (withGroups) {
+            List<GroupData> groupsList = contactGroups.stream().collect(Collectors.toList());
+            groupsList.sort(Comparator.comparing((GroupData gD) -> gD.getId()));
+
+            if(groupsList.size()>0) {
+                contactInfo.append("\n").append("Member of: ");
+                contactInfo.append(groupsList.stream().map(g -> g.getName()).collect(Collectors.joining(", ")));
+            }
+        }
         return contactInfo.toString();
+    }
+
+    private String getAge(String abDate){
+        int yeardiff = 0;
+        try {
+            calendar1.setTime(sdf.parse(abDate));
+            yeardiff = calendar0.get(YEAR) - calendar1.get(YEAR);
+            if(calendar1.get(MONTH)>calendar0.get(MONTH))
+                yeardiff = yeardiff - 1;
+            else if((calendar0.get(MONTH)==calendar1.get(MONTH))&&(calendar0.get(DAY_OF_MONTH)<calendar1.get(DAY_OF_MONTH)))
+                yeardiff = yeardiff - 1;
+        }
+        catch (ParseException pE){
+            pE.printStackTrace();
+        }
+
+        return String.valueOf(yeardiff);
     }
 }
 

@@ -1,0 +1,281 @@
+[ {
+  "uid" : "de4aa7a10bedd42f",
+  "name" : "modifyContactFromList",
+  "time" : {
+    "start" : 1633977099499,
+    "stop" : 1633977127084,
+    "duration" : 27585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b26f7a84a63ad85",
+  "name" : "deleteGroupsByIndices",
+  "time" : {
+    "start" : 1633977151541,
+    "stop" : 1633977153395,
+    "duration" : 1854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d57f756100a9a1c1",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633976989749,
+    "stop" : 1633976991921,
+    "duration" : 2172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af886c9a4c456f8d",
+  "name" : "deleteContactsByIndices",
+  "time" : {
+    "start" : 1633977174138,
+    "stop" : 1633977194282,
+    "duration" : 20144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d416ea2c591108d0",
+  "name" : "modifyContactFromList",
+  "time" : {
+    "start" : 1633977021270,
+    "stop" : 1633977045149,
+    "duration" : 23879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98ebd46517a69789",
+  "name" : "addToContactList",
+  "time" : {
+    "start" : 1633976954310,
+    "stop" : 1633976963579,
+    "duration" : 9269
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45e3e52164a3b6bf",
+  "name" : "deleteContactsByIndices",
+  "time" : {
+    "start" : 1633977210302,
+    "stop" : 1633977229706,
+    "duration" : 19404
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3eea2fd4706c169c",
+  "name" : "addToContactList",
+  "time" : {
+    "start" : 1633976945024,
+    "stop" : 1633976954296,
+    "duration" : 9272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed7ad8d116a77dc2",
+  "name" : "modifyContactFromList",
+  "time" : {
+    "start" : 1633977072319,
+    "stop" : 1633977099488,
+    "duration" : 27169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d5d0bc36ba3c69f",
+  "name" : "addToGroupList",
+  "time" : {
+    "start" : 1633976895172,
+    "stop" : 1633976900169,
+    "duration" : 4997
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "728add35a01075ad",
+  "name" : "addToGroupList",
+  "time" : {
+    "start" : 1633976907201,
+    "stop" : 1633976908771,
+    "duration" : 1570
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0094709f7fb16ea",
+  "name" : "deleteGroupsByIndices",
+  "time" : {
+    "start" : 1633977149826,
+    "stop" : 1633977151302,
+    "duration" : 1476
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa7efd594efb5499",
+  "name" : "addToContactList",
+  "time" : {
+    "start" : 1633976925748,
+    "stop" : 1633976935561,
+    "duration" : 9813
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70516fcb267a7b5",
+  "name" : "deleteGroupsByIndices",
+  "time" : {
+    "start" : 1633977153598,
+    "stop" : 1633977156166,
+    "duration" : 2568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6bdcc95128cfab0",
+  "name" : "deleteGroupsByIndices",
+  "time" : {
+    "start" : 1633977148580,
+    "stop" : 1633977149451,
+    "duration" : 871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef037f954602c72",
+  "name" : "deleteContactsByIndices",
+  "time" : {
+    "start" : 1633977316102,
+    "stop" : 1633977335939,
+    "duration" : 19837
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db59acf1db3d5728",
+  "name" : "deleteContactsByIndices",
+  "time" : {
+    "start" : 1633977245780,
+    "stop" : 1633977264735,
+    "duration" : 18955
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f9cecae10492ae2",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633977000252,
+    "stop" : 1633977002666,
+    "duration" : 2414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92643aa075945cfe",
+  "name" : "deleteContactsByIndices",
+  "time" : {
+    "start" : 1633977280775,
+    "stop" : 1633977300132,
+    "duration" : 19357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "107ec6820dfdc26d",
+  "name" : "addToContactList",
+  "time" : {
+    "start" : 1633976935575,
+    "stop" : 1633976945013,
+    "duration" : 9438
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "120e36cd7218c504",
+  "name" : "addToGroupList",
+  "time" : {
+    "start" : 1633976892116,
+    "stop" : 1633976895123,
+    "duration" : 3007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "39a8bb26295c17f7",
+  "name" : "deleteGroupsByIndices",
+  "time" : {
+    "start" : 1633977146861,
+    "stop" : 1633977148253,
+    "duration" : 1392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7391e3cc9f1f75b",
+  "name" : "modifyContactFromList",
+  "time" : {
+    "start" : 1633977045157,
+    "stop" : 1633977072307,
+    "duration" : 27150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69bbe93db84c1381",
+  "name" : "addToGroupList",
+  "time" : {
+    "start" : 1633976900196,
+    "stop" : 1633976907022,
+    "duration" : 6826
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32fd84b619566eb6",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633976996149,
+    "stop" : 1633976998185,
+    "duration" : 2036
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdbc4b680608bfdd",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633976998194,
+    "stop" : 1633977000242,
+    "duration" : 2048
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98fe39293623c5a7",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633976991938,
+    "stop" : 1633976993944,
+    "duration" : 2006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "624bf1a05d419b3a",
+  "name" : "modifyGroupFromList",
+  "time" : {
+    "start" : 1633976993953,
+    "stop" : 1633976996027,
+    "duration" : 2074
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

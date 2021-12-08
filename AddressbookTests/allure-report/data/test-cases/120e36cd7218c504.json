@@ -1,0 +1,148 @@
+{
+  "uid" : "120e36cd7218c504",
+  "name" : "addToGroupList",
+  "fullName" : "qa.issart.com.tests.GroupCreationTests.addToGroupList",
+  "historyId" : "9a74b734eb29837d43e51cf094304165",
+  "time" : {
+    "start" : 1633976892116,
+    "stop" : 1633976895123,
+    "duration" : 3007
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getAppGroups",
+    "time" : {
+      "start" : 1633976889729,
+      "stop" : 1633976891779,
+      "duration" : 2050
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "logTestStart",
+    "time" : {
+      "start" : 1633976891950,
+      "stop" : 1633976891951,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1633976816047,
+      "stop" : 1633976889717,
+      "duration" : 73670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "verifyGroupsInUI",
+    "time" : {
+      "start" : 1633976908843,
+      "stop" : 1633976909065,
+      "duration" : 222
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1633977351573,
+      "stop" : 1633977353961,
+      "duration" : 2388
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "qa.issart.com.tests.GroupCreationTests"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.issart.com.tests.GroupCreationTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "addToGroupList"
+  }, {
+    "name" : "parentSuite",
+    "value" : "CRUD contacts and groups"
+  }, {
+    "name" : "suite",
+    "value" : "Test groups creation"
+  }, {
+    "name" : "subSuite",
+    "value" : "qa.issart.com.tests.GroupCreationTests"
+  }, {
+    "name" : "host",
+    "value" : "ALPHARETTA"
+  }, {
+    "name" : "thread",
+    "value" : "7928@ALPHARETTA.Test worker(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "GroupData{group_id=0, group_name='pGR9EEkMPj1iMA7z51JF'}"
+  }, {
+    "name" : "dataFileName",
+    "value" : "groupsList.json"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "120e36cd7218c504.json",
+  "parameterValues" : [ "GroupData{group_id=0, group_name='pGR9EEkMPj1iMA7z51JF'}", "groupsList.json" ]
+}

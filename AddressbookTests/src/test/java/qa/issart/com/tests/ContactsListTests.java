@@ -61,7 +61,7 @@ public class ContactsListTests extends TestBase {
         contactInfo.setContactGroups(contactFromDB.getContactGroups());
         appManager.getNavigationHelper().navigateToContactPage();
         String s1 = appManager.getContactHelper().getContactInfo(id);
-        String s2 = contactInfo.printContactInfo();
+        String s2 = contactInfo.printContactInfo(true, true, 1);
         appManager.getNavigationHelper().navigateToContactPage();
         assertThat(s2, equalTo(s1));
     }

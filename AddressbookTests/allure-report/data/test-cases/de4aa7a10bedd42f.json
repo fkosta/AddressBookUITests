@@ -1,0 +1,148 @@
+{
+  "uid" : "de4aa7a10bedd42f",
+  "name" : "modifyContactFromList",
+  "fullName" : "qa.issart.com.tests.ContactModificationTest.modifyContactFromList",
+  "historyId" : "4176e4a46aa0999761fe6a502242dec",
+  "time" : {
+    "start" : 1633977099499,
+    "stop" : 1633977127084,
+    "duration" : 27585
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getAppContacts",
+    "time" : {
+      "start" : 1633977002993,
+      "stop" : 1633977021262,
+      "duration" : 18269
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "logTestStart",
+    "time" : {
+      "start" : 1633977099492,
+      "stop" : 1633977099492,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1633976816047,
+      "stop" : 1633976889717,
+      "duration" : 73670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "verifyContactsInUI",
+    "time" : {
+      "start" : 1633977127087,
+      "stop" : 1633977146285,
+      "duration" : 19198
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1633977351573,
+      "stop" : 1633977353961,
+      "duration" : 2388
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "qa.issart.com.tests.ContactModificationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.issart.com.tests.ContactModificationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "modifyContactFromList"
+  }, {
+    "name" : "parentSuite",
+    "value" : "CRUD contacts and groups"
+  }, {
+    "name" : "suite",
+    "value" : "Test contacts modification"
+  }, {
+    "name" : "subSuite",
+    "value" : "qa.issart.com.tests.ContactModificationTest"
+  }, {
+    "name" : "host",
+    "value" : "ALPHARETTA"
+  }, {
+    "name" : "thread",
+    "value" : "7928@ALPHARETTA.Test worker(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ContactData{id=0, firstname='PXbxZI2W1OgofA2dm2jN', lastname='lKJ56RxkiJDCIGbwRwLs', address='ryhJOltNABlEEnSqZ9hF', allEmails='TTy8EEw0y3@s0VyDHKt5V.jp\ncKLGBy4ln7@5zO6WcfPjY.pl\nipf6WVGPwK@v3QKKQc07E.kz', allPhones='3413816840\n6459726021\n6049997323\n9225677423'}"
+  }, {
+    "name" : "dataFileName",
+    "value" : "contactsList.csv"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de4aa7a10bedd42f.json",
+  "parameterValues" : [ "ContactData{id=0, firstname='PXbxZI2W1OgofA2dm2jN', lastname='lKJ56RxkiJDCIGbwRwLs', address='ryhJOltNABlEEnSqZ9hF', allEmails='TTy8EEw0y3@s0VyDHKt5V.jp\ncKLGBy4ln7@5zO6WcfPjY.pl\nipf6WVGPwK@v3QKKQc07E.kz', allPhones='3413816840\n6459726021\n6049997323\n9225677423'}", "contactsList.csv" ]
+}

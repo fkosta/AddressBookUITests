@@ -30,7 +30,7 @@ public class ContactsBirthdaysTest extends TestBase{
         Iterator it = contactsBeforeDB.iterator();
         while (it.hasNext()){
             nextContact = (ContactData) it.next();
-            calendar1.setTime(sdf.parse(nextContact.getBirthday()));
+            calendar1.setTime(sdf.parse(nextContact.getBirthday(0)));
             bmonth = nextContact.getBmonth();
 
             if((calendar1.get(MONTH) < calendar0.get(MONTH))||
@@ -61,7 +61,7 @@ public class ContactsBirthdaysTest extends TestBase{
             while(itContacts.hasNext()){
                 nextContact = itContacts.next();
                 str0 = ";"+nextContact.getBday()+".;"+nextContact.getMiddlename()+" "+nextContact.getLastname()+
-                        ";"+nextContact.getFirstname()+";"+getCurrentAge(nextContact.getBirthday())+";"+
+                        ";"+nextContact.getFirstname()+";"+getCurrentAge(nextContact.getBirthday(0))+";"+
                         nextContact.getEmail()+";"+nextContact.getHome();
                 contactAttributesBD.add(str0);
             }
