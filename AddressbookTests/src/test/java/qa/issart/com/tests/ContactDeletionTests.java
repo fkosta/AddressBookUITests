@@ -34,6 +34,7 @@ public class ContactDeletionTests extends TestBase{
             contactsBeforeDB = dbManager.getContactsList();
             Assert.assertEquals(contactsBeforeDB,contactsBeforeUI);
         }
+        assertThat(contactsBeforeUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     @Test(dataProvider = "listOfIndices", testName = "deleteContactsByIndices")
@@ -59,20 +60,21 @@ public class ContactDeletionTests extends TestBase{
     public void deleteAllContacts(){
         appManager.getContactHelper().deleteAllContacts();
         appManager.getNavigationHelper().navigateToContactPage();
+        contactsAfterUI = appManager.getContactHelper().getContactsList();
         if(useDB){
             assertThat(dbManager.getContactsList().size(),equalTo(0));
             processedContacts = contactsBeforeUI;
         }
         else
-            assertThat(appManager.getContactHelper().getContactsList(),equalTo(0));
+            assertThat(contactsAfterUI.size(),equalTo(0));
     }
 
     @AfterMethod
     public void verifyContactsInUI(Method method){
         if((useDB)&&(method.getName().equals("deleteContactsByIndices"))){
-            contactsAfterUI = appManager.getContactHelper().getContactsList();
             assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI,null,processedContacts));
         }
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     private List<Integer> parceIndList(String[] indList, int contactsNum) {

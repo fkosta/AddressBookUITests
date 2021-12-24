@@ -1,9 +1,6 @@
 package qa.issart.com.tests;
 
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
@@ -49,6 +46,7 @@ public class ContactsDeletionTestsFiltered extends TestBase {
         appManager.getContactHelper().moveSelectedContactsToGroup(groupFilter.getId());
         contactsBeforeUI = appManager.getContactHelper().getFilteredContacts(String.valueOf(groupFilter.getId()));
         contactsNum = contactsBeforeUI.size();
+        assertThat(contactsNum,equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     @Test(dataProvider = "listOfIndices", testName = "deleteContactsByIndices")
@@ -66,7 +64,13 @@ public class ContactsDeletionTestsFiltered extends TestBase {
     public void deleteAllContacts(){
         appManager.getContactHelper().deleteAllContacts();
         appManager.getNavigationHelper().navigateToContactPage();
-        assertThat(appManager.getContactHelper().getFilteredContacts(String.valueOf(groupFilter.getId())).size(),equalTo(0));
+        contactsAfterUI = appManager.getContactHelper().getFilteredContacts(String.valueOf(groupFilter.getId()));
+        assertThat(contactsAfterUI.size(),equalTo(0));
+    }
+
+    @AfterTest
+    public void verifyContactsNumber(){
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     private List<Integer> parceIndList(String[] indList, int contactsNum) {

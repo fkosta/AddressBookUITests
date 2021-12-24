@@ -18,6 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactPageTests extends TestBase{
     int contactsNum;
+    GroupData groupFilter;
 
     @BeforeTest
     public void prepareGroupsAndContacts() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
@@ -36,6 +37,10 @@ public class ContactPageTests extends TestBase{
             contactsBeforeUI = appManager.getContactHelper().getContactsList();
         }
         contactsNum = contactsBeforeUI.size();
+        groupFilter = groupsList.get(0);
+        appManager.getContactHelper().selectContact(Arrays.asList(0));
+        appManager.getContactHelper().moveSelectedContactsToGroup(groupFilter.getId());
+        appManager.getContactHelper().setContactsFilter("");
     }
 
     @Test
@@ -70,6 +75,12 @@ public class ContactPageTests extends TestBase{
     public void attemptDeleteOrMove(){
         assertThat(appManager.getContactHelper().clickOnDelete(),equalTo(true));
         assertThat(appManager.getContactHelper().clickOnMove(),equalTo(true));
+        appManager.getNavigationHelper().navigateToContactPage();
+        appManager.getContactHelper().setContactsFilter(String.valueOf(groupFilter.getId()));
+        assertThat(appManager.getContactHelper().clickOnDelete(),equalTo(true));
+        assertThat(appManager.getContactHelper().clickOnMove(),equalTo(true));
+        appManager.getNavigationHelper().navigateToContactPage();
+        assertThat(appManager.getContactHelper().clickOnRemove(),equalTo(true));
     }
 
 }

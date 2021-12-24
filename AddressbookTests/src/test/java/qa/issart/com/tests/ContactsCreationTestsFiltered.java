@@ -1,9 +1,6 @@
 package qa.issart.com.tests;
 
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
@@ -13,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactsCreationTestsFiltered extends TestBase {
@@ -34,6 +32,7 @@ public class ContactsCreationTestsFiltered extends TestBase {
 
         groupFilter = groupsList.get(0);
         contactsBeforeUI = appManager.getContactHelper().getFilteredContacts(String.valueOf(groupFilter.getId()));
+        assertThat(contactsBeforeUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     @Test(dataProvider = "ContactsListFromFile")
@@ -50,5 +49,10 @@ public class ContactsCreationTestsFiltered extends TestBase {
 
         contactsBeforeUI = contactsAfterUI;
         assertThat(addedContacts, new HasTheOnlyElement<ContactData>(newContact));
+    }
+
+    @AfterTest
+    public void verifyContactsNumber(){
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 }

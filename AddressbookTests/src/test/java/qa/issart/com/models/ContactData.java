@@ -99,11 +99,13 @@ public class ContactData {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="address_in_groups", joinColumns=@JoinColumn(name="id"), inverseJoinColumns=@JoinColumn(name="group_id"))
     private Set<GroupData> contactGroups = new HashSet<>();
-
+    @XStreamOmitField
     @Transient
     private SimpleDateFormat sdf = new SimpleDateFormat("d-MMMM-yyyy",Locale.ENGLISH);
+    @XStreamOmitField
     @Transient
     private Calendar calendar0 = new GregorianCalendar();
+    @XStreamOmitField
     @Transient
     private Calendar calendar1 = new GregorianCalendar();
 
@@ -531,41 +533,35 @@ public class ContactData {
                 ", allPhones='" + allPhones + '\'' +
                 '}';
     }
-    public String printContactInfo(boolean withGroups, boolean withLabels, int dateFormat){
+    public String printContactInfo(boolean withGroups, boolean printAll, int dateFormat){
         calendar0.setTime(new Date());
         StringBuilder contactInfo = new StringBuilder();
-        contactInfo.append(firstname).append(" ").append(middlename).append(" ").append(lastname).append("\n").append(nickname);
-        contactInfo.append("\n").append(title).append("\n").append(company).append("\n").append(address).append("\n");
-        if(withLabels){
-            contactInfo.append("H: ").append(home).append("\n").append("M: ").append(mobile).append("\n");
-            contactInfo.append("W: ").append(work).append("\n").append("F: ").append(fax).append("\n");
-        }
-        else {
-            contactInfo.append(home).append("\n").append(mobile).append("\n");
-            contactInfo.append(work).append("\n").append(fax).append("\n");
-        }
+        contactInfo.append(firstname).append(" ").append(middlename).append(" ").append(lastname).append("\n");
+        contactInfo.append(nickname).append("\n");
 
-        contactInfo.append(allEmails).append("\n");
+        if(printAll)
+            contactInfo.append(title).append("\n").append(company).append("\n").append(address).append("\n");
 
-        String bAge = String.format(" (%s)",getAge(getBirthday(0)));
-        String aAge = String.format(" (%s)",getAge(getAnniversary(0)));
+        contactInfo.append("H: ").append(home).append("\n").append("M: ").append(mobile).append("\n");
+        contactInfo.append("W: ").append(work).append("\n").append("F: ").append(fax).append("\n");
 
-        if(withLabels) {
+        if(printAll) {
+            contactInfo.append(allEmails).append("\n");
+
+            String bAge = String.format(" (%s)", getAge(getBirthday(0)));
+            String aAge = String.format(" (%s)", getAge(getAnniversary(0)));
+
             contactInfo.append("Homepage:\n").append(homepage).append("\n");
             contactInfo.append("Birthday ").append(getBirthday(dateFormat)).append(bAge).append("\n");
             contactInfo.append("Anniversary ").append(getAnniversary(dateFormat)).append(aAge).append("\n");
-        }
-        else {
-            contactInfo.append(homepage).append("\n").append(getBirthday(dateFormat).toLowerCase()).append("\n");
-            contactInfo.append(getAnniversary(dateFormat).toLowerCase()).append("\n");
+
+            contactInfo.append(address2).append("\n");
         }
 
-        contactInfo.append(address2).append("\n");
+        contactInfo.append("P: ").append(phone2);
 
-        if(withLabels)
-            contactInfo.append("P: ").append(phone2).append("\n").append(notes);
-        else
-            contactInfo.append(phone2).append("\n").append(notes);
+        if(printAll)
+            contactInfo.append("\n").append(notes);
 
         if (withGroups) {
             List<GroupData> groupsList = contactGroups.stream().collect(Collectors.toList());

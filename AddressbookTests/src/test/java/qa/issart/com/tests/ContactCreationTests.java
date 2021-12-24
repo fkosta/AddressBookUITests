@@ -1,14 +1,17 @@
 package qa.issart.com.tests;
 
+import org.hamcrest.MatcherAssert;
 import org.testng.annotations.*;
 import qa.issart.com.models.ContactData;
 import qa.issart.com.models.GroupData;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactCreationTests extends TestBase{
@@ -23,13 +26,14 @@ public class ContactCreationTests extends TestBase{
             dataFile = dataFileName;
 
         appManager.getNavigationHelper().navigateToGroupPage();
-        groupsList = appManager.getGroupHelper().getGroupsList().stream().collect(Collectors.toList());
+        groupsList = new ArrayList<>(appManager.getGroupHelper().getGroupsList());
         appManager.getNavigationHelper().navigateToContactPage();
         contactsBeforeUI = appManager.getContactHelper().getContactsList();
         if(useDB) {
             contactsBeforeDB = dbManager.getContactsList();
             assertThat(contactsBeforeDB, equalTo(contactsBeforeUI));
         }
+        assertThat(contactsBeforeUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     @Test(dataProvider = "ContactsListFromFile")
@@ -72,5 +76,6 @@ public class ContactCreationTests extends TestBase{
             contactsAfterUI = appManager.getContactHelper().getContactsList();
             assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI,processedContacts,null));
         }
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 }

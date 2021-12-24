@@ -77,6 +77,10 @@ public class ApplicationManager {
         return navigationHelper;
     }
 
+    public Properties getTestsProperties(){
+        return properties;
+    }
+
     public byte[] takeScreensot(){
         return ((TakesScreenshot)wD).getScreenshotAs(OutputType.BYTES);
     }

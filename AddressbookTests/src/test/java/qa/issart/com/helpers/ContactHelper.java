@@ -36,6 +36,24 @@ public class ContactHelper extends BaseHelper {
         return contactsList;
     }
 
+    public List<ContactData> getContactsList0() {
+        List<ContactData> contactsList = new ArrayList<>();
+        int ind = 2;
+        int elementID;
+
+        String xpathPattern0 = "/html/body/div/div[4]/form[2]/table/tbody/tr[%d]/td[position()>1 and position()<7]";
+        String xpathPattern1 = "/html/body/div/div[4]/form[2]/table/tbody/tr[%d]/td[1]/input";
+        List<WebElement> weList = wD.findElements(By.xpath(String.format(xpathPattern0, ind)));
+        while (weList.size() > 0) {
+            elementID = Integer.parseInt(wD.findElement(By.xpath(String.format(xpathPattern1, ind))).getAttribute("id"));
+            contactsList.add(new ContactData(weList.get(1).getText(), weList.get(0).getText(), weList.get(2).getText(),
+                    weList.get(3).getText(), weList.get(4).getText()).withId(elementID));
+            ind++;
+            weList = wD.findElements(By.xpath(String.format(xpathPattern0, ind)));
+        }
+        return contactsList;
+    }
+
     public void fillContactForm(ContactData contactInfo, boolean isNew, GroupData contactGroup) {
         type(By.name("firstname"), contactInfo.getFirstname());
         type(By.name("middlename"), contactInfo.getMiddlename());
@@ -182,39 +200,6 @@ public class ContactHelper extends BaseHelper {
                 getAttribute(By.name("notes"), ""));
         contactDataUI.composePhonesAndEmails();
         return contactDataUI;
-    }
-
-    public String getContactInfo0(int ind) {
-        click(By.xpath(String.format("//a[@href=\"view.php?id=%s\"]", ind)));
-        String contactHTML = wD.findElement(By.xpath("//*[@id=\"content\"]")).getText();
-        String[] contactData = contactHTML.split("\n\n");
-        StringBuilder contactInfo = new StringBuilder();
-        for (String contactField : contactData) {
-            if (contactField.startsWith("H:") || contactField.startsWith("M:") || contactField.startsWith("W:") || contactField.startsWith("F:")) {
-                String[] contactPhones = contactField.split("\\w:\\s");
-                for (int inx = 1; inx < contactPhones.length; inx++) {
-                    contactInfo.append(contactPhones[inx]);
-                }
-                contactInfo.append("\n");
-            } else if (contactField.contains("Homepage")) {
-                String[] emailWWW = contactField.split("Homepage:\n");
-                contactInfo.append(emailWWW[0]).append(emailWWW[1]);
-                contactInfo.append("\n");
-            } else if (contactField.contains("Birthday") || (contactField.contains("Anniversary"))) {
-                contactField = contactField.replaceAll("Birthday\\s|Anniversary\\s|\\.|\\s\\(.+\\)", "");
-                String[] ba = contactField.split("\n");
-                contactInfo.append(ba[0].replaceAll("\\s", "-").toLowerCase()).append("\n");
-                contactInfo.append(ba[1].replaceAll("\\s", "-").toLowerCase()).append("\n");
-            } else if (contactField.startsWith("P:")) {
-                String[] contactPhones = contactField.split("P:\\s");
-                contactInfo.append(contactPhones[1]).append("\n");
-            } else if (contactField.startsWith("\nMember")) {
-                contactInfo.append(contactField.replaceAll("\nMember\\sof:\\s", ""));
-            } else {
-                contactInfo.append(contactField).append("\n");
-            }
-        }
-        return contactInfo.toString();
     }
 
     public List<GroupData> getGroupsFromDropDown(int list) {
@@ -377,5 +362,19 @@ public class ContactHelper extends BaseHelper {
             }
         }
         return parsedSet;
+    }
+
+    public void sortContactsList(String column) {
+        click(By.linkText(column));
+        return;
+    }
+
+    public int getContactsNumber() {
+        return Integer.parseInt(wD.findElement(By.id("search_count")).getText());
+    }
+
+    public Boolean clickOnRemove() {
+        click(By.xpath("/html/body/div/div[4]/form[2]/div[3]/input"));
+        return getAttribute(By.xpath("/html/body/div/div[4]/div/i"),"").contains("No users selected");
     }
 }

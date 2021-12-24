@@ -3,6 +3,7 @@ package qa.issart.com.tests;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -92,6 +93,7 @@ public class TestBase {
                 if(fileType.equals("xml")){
                     XStream xStream = new XStream();
                     xStream.processAnnotations(GroupData.class);
+                    xStream.addPermission(AnyTypePermission.ANY);
                     testGroups = (ArrayList<GroupData>)xStream.fromXML(groupsData.toString());
                 }
                 else{
@@ -136,6 +138,7 @@ public class TestBase {
                 if(fileType.equals("xml")){
                     XStream xStream = new XStream();
                     xStream.processAnnotations(ContactData.class);
+                    xStream.addPermission(AnyTypePermission.ANY);
                     testContacts = (ArrayList<ContactData>)xStream.fromXML(contactsData.toString());
                 }
                 else{

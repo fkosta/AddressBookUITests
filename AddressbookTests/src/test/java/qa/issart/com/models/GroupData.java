@@ -9,6 +9,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @XStreamAlias("group")
 @Entity
@@ -67,7 +68,7 @@ public class GroupData {
     }
 
     public Set<ContactData> getGroupContacts(){
-        return groupContacts;
+        return groupContacts.stream().map(c->c.composePhonesAndEmails()).collect(Collectors.toSet());
     }
 
     public GroupData withId(int group_id) {

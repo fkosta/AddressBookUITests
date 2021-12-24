@@ -35,4 +35,9 @@ public class NavigationHelper extends BaseHelper{
         click(By.linkText("print all"));
         return isElementPresent(By.xpath("/html/body/div/div[1]/h1"));
     }
+
+    public boolean navigateToPrintPhonesPage() {
+        click(By.linkText("print phones"));
+        return isElementPresent(By.xpath("/html/body/div/div[1]/h1"));
+    }
 }

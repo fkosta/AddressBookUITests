@@ -36,6 +36,7 @@ public class ContactModificationTest extends TestBase{
             contactsBeforeDB = dbManager.getContactsList();
             assertThat(contactsBeforeDB, equalTo(contactsBeforeUI));
         }
+        assertThat(contactsBeforeUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     @Test(dataProvider = "ContactsListFromFile")
@@ -65,6 +66,7 @@ public class ContactModificationTest extends TestBase{
             assertThat(contactsAfterUI,
                     new withElementsInOut<ContactData>(contactsBeforeUI,enteredContacts.values(),changedContacts.values()));
         }
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     private String buildLogEntry(ContactData modifiedContact, ContactData newContact) {

@@ -106,6 +106,7 @@ public class ContactsRemovalFromGroupTests extends TestBase{
                 assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI, null, selectedContacts));
                 correctGroupContactsMap(selectedContacts, selectedGroup);
                 correctContactGroupsMap(selectedContacts, selectedGroup);
+                assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
             }
         }
     }
@@ -121,6 +122,7 @@ public class ContactsRemovalFromGroupTests extends TestBase{
                 assertThat(contactsAfterUI.size(), equalTo(0));
                 correctGroupContactsMap(selectedContacts, selectedGroup);
                 correctContactGroupsMap(selectedContacts, selectedGroup);
+                assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
             }
         }
     }
@@ -135,6 +137,7 @@ public class ContactsRemovalFromGroupTests extends TestBase{
         assertThat(contactsAfterUI, new withElementsInOut<ContactData>(contactsBeforeUI,null,selectedContacts));
         correctGroupContactsMap(selectedContacts, selectedGroup);
         correctContactGroupsMap(selectedContacts, selectedGroup);
+        assertThat(contactsAfterUI.size(),equalTo(appManager.getContactHelper().getContactsNumber()));
     }
 
     private void correctContactGroupsMap(Set<ContactData> selectedContacts, GroupData selectedGroup) {
